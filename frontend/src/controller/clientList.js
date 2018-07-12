@@ -4,27 +4,14 @@ class ClientList extends Component {
   render() {
     return (
       <div>
-        Select a client to send video to:
-        <ul>
-          <li
-              key="all"
-              style={{ color: this.props.selectedClient === 'all' ? 'green' : 'black', cursor: 'pointer' }}
-              onClick={() => { this.props.handleClientSelect('all') }}
-            >
-            all clients
-            </li>
-          {this.props.clientList.map((client) => {
-            return (
-              <li
-                key={client}
-                style={{ color: this.props.selectedClient === client ? 'green' : 'black', cursor: 'pointer' }}
-                onClick={() => { this.props.handleClientSelect(client) }}
-              >
-                {client}
-              </li>
-            );
-          })}
-        </ul>
+        There are currently {this.props.clientList.length} client(s) connected.
+        <br/>
+        <br/>
+        Select percentage of users to send to (number between 0 and 100):
+        <br/>
+        <input type="number" value={this.props.selectedClientPercentage} onChange={this.props.handleClientPercentageSelect} />
+        <br/>
+        <br/>
         <button
           onClick={this.props.handleVideoSend}
         >

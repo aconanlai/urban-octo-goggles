@@ -1,0 +1,20 @@
+@media (min-aspect-ratio: 8/4) {
+  video {
+    height: auto !important;
+    width: 100vw !important;
+  }
+}
+
+@media (min-aspect-ratio: 8/8) {
+  video {
+    height: 150vh;
+    width: auto;
+  }
+}
+
+@media (max-aspect-ratio: 8/8) {
+  video {
+    height: 120vh;
+    width: auto;
+  }
+}
