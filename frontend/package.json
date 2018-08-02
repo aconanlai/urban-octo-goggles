@@ -12,7 +12,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf ../build/build && react-scripts build && mv ./build ../build/build",
+    "build": "rm -rf ../build/build && react-scripts build && mv ./build/ ../build/build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

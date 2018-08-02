@@ -4,6 +4,9 @@ const path = require('path');
 const WebSocket = require('ws');
 const uuid = require('uuid/v4');
 
+const logger = require('./logger');
+const msgTypes = require('./msgTypes');
+
 const app = express();
 
 const server = http.createServer(app);
@@ -15,26 +18,24 @@ const connections = {
 
 let controller;
 
+const msgProcessor = msgTypes(connections);
+
 wss.on('connection', (ws) => {
+  console.log('connected');
   const id = uuid();
   ws.id = id;
   connections[id] = ws;
   sendClientsList();
   ws.on('message', function incoming(data) {
     const msg = JSON.parse(data);
-    console.log(msg.msgType);
     switch (msg.msgType) {
       case 'sendVideo':
-        // const now = new Date().getTime();
-        const msgWithTime = {
-          ...msg,
-          // serverReceived: now,
-        };
-        if (msg.recipient === 'all') {
-          sendToAll(msgWithTime);
-        } else {
-          sendToOne(msgWithTime);
-        }
+        logger.info(`sendVideo received: ${JSON.stringify(msg)}`);
+        msgProcessor.process(msg);
+        break;
+      case 'sendImage':
+        logger.info(`sendImage received: ${JSON.stringify(msg)}`);
+        msgProcessor.processImage(msg);
         break;
       case 'registerController':
         controller = ws;
@@ -52,23 +53,6 @@ wss.on('connection', (ws) => {
   });
 });
 
-function sendToAll(msg) {
-  console.log('sending to all')
-  Object.values(connections).forEach(function each(client, i) {
-    if (client && client.readyState === WebSocket.OPEN) {
-      client.send(JSON.stringify(msg));
-    }
-  });
-}
-
-function sendToOne(msg) {
-  console.log('sending to one');
-  const client = connections[msg.recipient];
-  if (client && client.readyState === WebSocket.OPEN) {
-    client.send(JSON.stringify(msg));
-  }
-}
-
 function sendClientsList() {
   if (controller && controller.readyState === WebSocket.OPEN) {
     controller.send(JSON.stringify({
@@ -78,12 +62,21 @@ function sendClientsList() {
   }
 }
 
-
-app.get('/test', (req, res) => res.send('test'));
-app.use(express.static(__dirname + '/build'));
-app.get('*', (req, res) => res.sendFile(path.join(__dirname+'/build/index.html')));
+app.use(express.static(__dirname + '/build/build'));
+app.get('*', (req, res) => res.sendFile(path.join(__dirname + '/build/build/index.html')));
 
 // start our server
 server.listen(process.env.PORT || 8080, () => {
-  console.log(`Server started on port ${server.address().port} :)`);
+  logger.info('Server started');
 });
+
+process
+  .on('unhandledRejection', (reason, p) => {
+    logger.error(`unhandledRejection: reason: ${reason} - p: ${p}`);
+    process.exit(1);
+  })
+  .on('uncaughtException', err => {
+    logger.error(`unhandledRejection: err: ${err}`);
+    console.log(err);
+    process.exit(1);
+  });

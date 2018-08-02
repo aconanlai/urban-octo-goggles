@@ -12,14 +12,25 @@ class Controller extends Component {
       selectedClientPercentage: 0,
       selectedVideo: null,
       selectedVideoList: 'ducks,forest,avatar',
+      selectedImage: null,
+      selectedImageList: 'apples,bananas,pears',
+      selectedMediaType: 'video',
       selectedMode: 'random',
-      videoList: ['avatar', 'ducks', 'forest', 'waterfall', 'waves'],
+      selectedInterval: 1000,
+      selectedImageDuration: 500,
+      videoList: ['ducks', 'waterfall', 'avatar', 'waves', 'forest'],
+      imageList: ['apples', 'bananas', 'pears', 'pineapples'],
     }
     this.handleClientPercentageSelect = this.handleClientPercentageSelect.bind(this);
+    this.handleMediaTypeSelect = this.handleMediaTypeSelect.bind(this);
     this.handleVideoSelect = this.handleVideoSelect.bind(this);
     this.handleModeSelect = this.handleModeSelect.bind(this);
+    this.handleIntervalSelect = this.handleIntervalSelect.bind(this);
     this.handleVideoSend = this.handleVideoSend.bind(this);
     this.handleMultipleVideoSelect = this.handleMultipleVideoSelect.bind(this);
+    this.handleImageSelect = this.handleImageSelect.bind(this);
+    this.handleMultipleImageSelect = this.handleMultipleImageSelect.bind(this);
+    this.handleImageDurationSelect = this.handleImageDurationSelect.bind(this);
   }
 
   openWs() {
@@ -69,6 +80,18 @@ class Controller extends Component {
     })
   }
 
+  handleIntervalSelect(e) {
+    this.setState({
+      selectedInterval: e.target.value,
+    })
+  }
+
+  handleMediaTypeSelect(e) {
+    this.setState({
+      selectedMediaType: e.target.value,
+    })
+  }
+
   handleVideoSelect(video) {
     this.setState({
       selectedVideo: video,
@@ -81,14 +104,40 @@ class Controller extends Component {
     });
   }
 
+  handleImageSelect(image) {
+    this.setState({
+      selectedImage: image,
+    })
+  }
+
+  handleMultipleImageSelect(e) {
+    this.setState({
+      selectedImageList: e.target.value,
+    });
+  }
+
+  handleImageDurationSelect(e) {
+    this.setState({
+      selectedImageDuration: e.target.value,
+    });
+  }
+
   handleVideoSend() {
+    const mediaType = this.state.selectedMediaType;
     // const now = new Date().getTime();
-    console.log('sending video');
+    console.log(`sending ${mediaType}`);
     const payload = {
-      msgType: 'sendVideo',
+      msgType: mediaType === 'video' ? 'sendVideo' : 'sendImage',
       mode: this.state.selectedMode,
       percentage: this.state.selectedClientPercentage,
-      videoIds: this.state.selectedMode === 'chase' ? this.state.selectedVideo : this.state.selectedVideoList, 
+      // videoIds: this.state.selectedMode === 'chase' ? this.state.selectedVideo : this.state.selectedVideoList,
+      interval: this.state.selectedInterval,
+    }
+    if (mediaType === 'video') {
+      payload.videoIds = this.state.selectedMode === 'chase' ? this.state.selectedVideo : this.state.selectedVideoList;
+    } else {
+      payload.imageIds = this.state.selectedMode === 'chase' ? this.state.selectedImage : this.state.selectedImageList;
+      payload.imageDuration = this.state.selectedImageDuration
     }
     this.ws.send(JSON.stringify(payload));
   }
@@ -98,9 +147,14 @@ class Controller extends Component {
       <div style={{ display: 'flex' }}>
         <VideoSelector
           {...this.state}
+          handleMediaTypeSelect={this.handleMediaTypeSelect}
           handleVideoSelect={this.handleVideoSelect}
           handleModeSelect={this.handleModeSelect}
           handleMultipleVideoSelect={this.handleMultipleVideoSelect}
+          handleImageSelect={this.handleImageSelect}
+          handleMultipleImageSelect={this.handleMultipleImageSelect}
+          handleIntervalSelect={this.handleIntervalSelect}
+          handleImageDurationSelect={this.handleImageDurationSelect}
         />
         <ClientList
           {...this.state}

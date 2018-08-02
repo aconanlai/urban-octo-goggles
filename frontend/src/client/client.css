@@ -1,19 +1,48 @@
+* {
+  margin: 0;
+}
+
+.clicker {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  cursor: pointer;
+}
+
+h1 {
+  color: white;
+  font-size: 5em;
+}
+
+.client {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+.appear {
+  color: red;
+}
+
 @media (min-aspect-ratio: 8/4) {
-  video {
+  video, img {
     height: auto !important;
     width: 100vw !important;
   }
 }
 
 @media (min-aspect-ratio: 8/8) {
-  video {
+  video, img {
     height: 150vh;
     width: auto;
   }
 }
 
 @media (max-aspect-ratio: 8/8) {
-  video {
+  video, img {
     height: 120vh;
     width: auto;
   }
