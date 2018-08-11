@@ -4,6 +4,7 @@ const path = require('path');
 const WebSocket = require('ws');
 const uuid = require('uuid/v4');
 const osc = require('osc');
+// const simulateLatency = require('express-simulate-latency');
 
 const logger = require('./logger');
 const msgTypes = require('./msgTypes');
@@ -12,6 +13,9 @@ const oscConverterFactory = require('./oscConverter');
 const app = express();
 
 const server = http.createServer(app);
+
+// const smallLag = simulateLatency({ min: 500, max: 500 });
+// app.use(smallLag);
 
 const wss = new WebSocket.Server({ server });
 
@@ -65,7 +69,9 @@ function sendClientsList() {
   }
 }
 
-app.use(express.static(__dirname + '/build/build'));
+app.use(express.static(__dirname + '/build/build', {
+  maxage: 86400000,
+}));
 app.get('*', (req, res) => res.sendFile(path.join(__dirname + '/build/build/index.html')));
 
 // start our server

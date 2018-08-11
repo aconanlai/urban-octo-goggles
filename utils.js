@@ -1,9 +1,9 @@
 module.exports = {
   getRandomPercentage: (arr, percentage) => {
   
-    if (percentage >= 100) {
-      return arr;
-    }
+    // if (percentage >= 100) {
+    //   return arr;
+    // }
     console.log(arr.length);
     console.log(percentage);
     let n = Math.ceil(arr.length * (percentage / 100));

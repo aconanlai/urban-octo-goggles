@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import config from '../config.js';
-import TimingInfo from './timingInfo';
+import { AssetCacher } from './assetCacher'
+
 import './client.css';
 
 class Client extends Component {
   constructor(props) {
     super(props);
-    this.randomInterval = null;
-    this.randomTimeout = null;
+    this.assetCacher = new AssetCacher();
+    this.randomTimeoutInterval = null;
     this.video1 = React.createRef();
     this.video2 = React.createRef();
     this.state = {
@@ -20,10 +21,12 @@ class Client extends Component {
       randomVidArr: [],
       randomImageArr: [],
       currentRandomIndex: 0,
+      randomDuration: 100,
     }
     this.renderVideoElements = this.renderVideoElements.bind(this);
     this.onPlay = this.onPlay.bind(this);
     this.onEnded = this.onEnded.bind(this);
+    this.playNextRandomMedia = this.playNextRandomMedia.bind(this);
   }
 
   openWs = () => {
@@ -41,6 +44,11 @@ class Client extends Component {
         if (data.msgType === 'sendImage') {
           this.processImageMsg(data);
         }
+        if (data.msgType === 'sendKill') {
+          this.setState({
+            currentMode: null,
+          })
+        }
       }
     };
     this.ws.onclose = () => {
@@ -54,17 +62,16 @@ class Client extends Component {
   processVideoMsg = (msg) => {
     const { videoId, mode, ...rest } = msg;
     switch (mode) {
-      case 'all':
-        this.playSingleVideo(msg.videoId);
-        break;
       case 'chase':
         this.setState({
           currentMode: 'chase'
         });
         this.playSingleVideo(msg.videoIds);
+        this.clearRandomImageTimeout();
         break;
       case 'random':
         this.playRandomVideos(msg.videoIds);
+        this.clearRandomImageTimeout();
         break;
       default:
         break;
@@ -75,6 +82,7 @@ class Client extends Component {
     const { imageIds, mode, imageDuration, ...rest } = msg;
     switch (mode) {
       case 'chase':
+        this.clearRandomImageTimeout();
         this.setState({
           imageId: imageIds,
           currentMode: 'chaseImage',
@@ -109,7 +117,7 @@ class Client extends Component {
       currentMode: 'random',
       currentRandomIndex: 0,
       randomVidArr: idsArr,
-      [`videoId${nextVidElement}`]: idsArr[0],
+      [`videoId${nextVidElement}`]: idsArr[Math.floor(Math.random() * idsArr.length)],
       currentVidElement: nextVidElement,
       // [`videoId2`]: idsArr[0],
     }, () => {
@@ -120,37 +128,45 @@ class Client extends Component {
     });
   }
 
-  // TODO: should set a 'random instance id' so timeouts do not fire if another random image sequence is received
-  // alternatively, clear the interval + timeout when new msg arrives
-
-  playRandomImages = (ids, imageDuration) => {
+  clearRandomImageTimeout = () => {
     clearTimeout(this.randomTimeout);
-    clearInterval(this.randomInterval);
+    this.randomTimeout = null;
+  }
+
+  // TODO: this can be adapted for videos if we ever move off the onEnd solution...
+  playNextRandomMedia = () => {
+    if (this.state.currentMode === 'randomImage') {
+      const indicesArr = Array.apply(null, { length: this.state.randomImageArr.length }).map(Number.call, Number);
+      if (indicesArr.length > 1) {
+        indicesArr.splice(this.state.currentRandomIndex, 1);
+      }
+      var randomIndex = indicesArr[Math.floor(Math.random() * indicesArr.length)];
+      const nextId = this.state.randomImageArr[randomIndex];
+      this.setState({
+        imageId: nextId,
+        currentRandomIndex: randomIndex,
+      }, () => {
+        this.randomTimeout = setTimeout(this.playNextRandomMedia, this.state.randomDuration);
+      })
+    } else if (this.state.currentMode === 'randomVideo') {
+      // TODO
+    }
+  }
+
+  // TODO: set this.randomTimeout = null when clearing timeOut
+  playRandomImages = async (ids, randomDuration) => {
     const idsArr = ids.split(',');
+    await this.assetCacher.preloadImages(idsArr);
+    console.log('image preloading complete')
     this.setState({
+      randomDuration,
       currentMode: 'randomImage',
       currentRandomIndex: 0,
       randomImageArr: idsArr,
-      imageId: idsArr[0],
     }, () => {
-      this.randomInterval = setInterval(() => {
-        if (this.state.currentMode === 'randomImage') {
-          const nextIndex = this.state.currentRandomIndex + 1;
-          const nextId = this.state.randomImageArr[nextIndex];
-          this.setState({
-            imageId: nextId,
-            currentRandomIndex: nextIndex,
-          })
-        }
-      }, imageDuration);
-      this.randomTimeout = setTimeout(() => {
-        clearInterval(this.randomInterval);
-        if (this.state.currentMode === 'randomImage') {
-          this.setState({
-            currentMode: null,
-          });
-        }
-      }, imageDuration * idsArr.length);
+      if (!this.randomTimeout) {
+        this.playNextRandomMedia();
+      }
     });
   }
 
@@ -179,30 +195,45 @@ class Client extends Component {
     // console.log(element);
   }
 
+  // TODO: test all of this with very short videos
   onEnded = (elementNumber) => {
     console.log('ended')
     if (this.state.currentVidElement === elementNumber) {
       const { currentMode } = this.state;
-      if (currentMode === 'random' &&
-          (this.state.currentRandomIndex < this.state.randomVidArr.length - 1)
+      if (currentMode === 'random' 
+          // && (this.state.currentRandomIndex < this.state.randomVidArr.length - 1)
           ) {
             console.log('in array of random, go to next')
             // in array of random, go to next
-            const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
-            const nextIndex = this.state.currentRandomIndex + 1;
+            let nextIndex;
+            if (this.state.randomVidArr.length > 1) {
+              const indicesArr = Array.apply(null, { length: this.state.randomVidArr.length }).map(Number.call, Number);
+              indicesArr.splice(this.state.currentRandomIndex, 1);
+              nextIndex = indicesArr[Math.floor(Math.random() * indicesArr.length)];
+            } else {
+              nextIndex = this.state.currentRandomIndex;
+            }
             const nextId = this.state.randomVidArr[nextIndex];
+            const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
+            // const nextIndex = this.state.currentRandomIndex + 1;
+            // const nextId = this.state.randomVidArr[nextIndex];
             this.setState({
               [`videoId${nextVidElement}`]: nextId,
               currentRandomIndex: nextIndex,
               currentVidElement: nextVidElement,
+            }, () => {
+              // need to do this if 'next' video is same as 'previous' video so element still has it loaded on the last frame
+              const toRef = `video${nextVidElement}`;
+              const element = this[toRef].current;
+              element.play();
             });
             return
           }
       // TODO: handle varying ending cases
-      this.setState({
-        videoId1: null,
-        videoId2: null,
-      });
+      // this.setState({
+      //   videoId1: null,
+      //   videoId2: null,
+      // });
     }
   }
 
@@ -239,6 +270,7 @@ class Client extends Component {
       <img
         className="image"
         src={`${config.filesPath}/images/${this.state.imageId}.jpg`}
+        // src={this.assetCacher.images[this.state.imageId]}
       />
     )
   }
