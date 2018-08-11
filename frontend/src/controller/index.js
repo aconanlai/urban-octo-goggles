@@ -126,8 +126,16 @@ class Controller extends Component {
     const mediaType = this.state.selectedMediaType;
     // const now = new Date().getTime();
     console.log(`sending ${mediaType}`);
+    let msgType;
+    if (mediaType === 'video') {
+      msgType = 'sendVideo';
+    } else if (mediaType === 'image') {
+      msgType = 'sendImage';
+    } else {
+      msgType = 'sendKill';
+    }
     const payload = {
-      msgType: mediaType === 'video' ? 'sendVideo' : 'sendImage',
+      msgType,
       mode: this.state.selectedMode,
       percentage: this.state.selectedClientPercentage,
       // videoIds: this.state.selectedMode === 'chase' ? this.state.selectedVideo : this.state.selectedVideoList,

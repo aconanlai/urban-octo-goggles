@@ -44,6 +44,10 @@ wss.on('connection', (ws) => {
         logger.info(`sendImage received: ${JSON.stringify(msg)}`);
         msgProcessor.processImage(msg);
         break;
+      case 'sendKill':
+        logger.info(`sendKill received: ${JSON.stringify(msg)}`);
+        msgProcessor.processKill(msg);
+        break;
       case 'registerController':
         controller = ws;
         delete connections[ws.id];

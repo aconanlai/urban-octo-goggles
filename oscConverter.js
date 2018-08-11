@@ -56,6 +56,16 @@ module.exports = () => {
           imageDuration: args[2].value,
         };
         break;
+      case '/send_kill':
+        if (args.length !== 1) {
+          logger.error('incorrect number of arguments for send_kill');
+          break;
+        }
+        payload = {
+          msgType: 'sendKill',
+          percentage: args[0].value,
+        };
+        break;
       default:
         logger.error(`unknown address in osc: ${address}`);
     }

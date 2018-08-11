@@ -143,6 +143,14 @@ module.exports = (connections) => {
           break;
       }
     },
+
+    processKill: (msg) => {
+      const { percentage } = msg;
+      const realPercentage = Number(msg.percentage);
+      const clients = utils.getRandomPercentage(Object.values(connections), realPercentage);
+      logger.info(`sending kill msg to ${percentage}% of users (${clients.length} users)`);
+      sendToClients(clients, msg);
+    },
   };
 };
 

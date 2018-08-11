@@ -20,12 +20,12 @@ class VideoSelector extends Component {
             );
           })}
         </ul>
-        <br/>
-        <br/>
+        <br />
+        <br />
         Enter an interval (milliseconds):
         <input type="number" value={this.props.selectedInterval} onChange={this.props.handleIntervalSelect} />
-        <br/>
-        <br/>
+        <br />
+        <br />
         Enter a duration (milliseconds):
         <input type="number" value={this.props.selectedImageDuration} onChange={this.props.handleImageDurationSelect} />
       </div>
@@ -47,17 +47,17 @@ class VideoSelector extends Component {
             );
           })}
         </ul>
-        <br/>
+        <br />
         Enter comma separated list of imagesIds from above list:
-        <br/>
+        <br />
         <textarea
           value={this.props.selectedImageList}
           onChange={this.props.handleMultipleImageSelect}
           placeholder="bananas,apples,pears"
           style={{ height: '400px', width: '80%' }}
         />
-        <br/>
-        <br/>
+        <br />
+        <br />
         Enter a duration (milliseconds):
         <input type="number" value={this.props.selectedImageDuration} onChange={this.props.handleImageDurationSelect} />
       </div>
@@ -81,8 +81,8 @@ class VideoSelector extends Component {
             );
           })}
         </ul>
-        <br/>
-        <br/>
+        <br />
+        <br />
         Enter an interval (milliseconds):
         <input type="number" value={this.props.selectedInterval} onChange={this.props.handleIntervalSelect} />
       </div>
@@ -104,9 +104,9 @@ class VideoSelector extends Component {
             );
           })}
         </ul>
-        <br/>
+        <br />
         Enter comma separated list of videoIds from above list:
-        <br/>
+        <br />
         <textarea
           value={this.props.selectedVideoList}
           onChange={this.props.handleMultipleVideoSelect}
@@ -122,30 +122,36 @@ class VideoSelector extends Component {
       <div style={{ width: '50vw' }}>
         <div>
           Select a media type:
-          <br/>
+          <br />
           <select value={this.props.selectedMediaType} onChange={this.props.handleMediaTypeSelect}>
             <option value="video">video</option>
             <option value="image">image</option>
+            <option value="kill">kill</option>
           </select>
         </div>
-        <br/>
-        <div>
-          Select a mode:
-          <br/>
-          <ul>
-            {modesList.map((mode) => {
-              return (
-                <li
-                  key={mode}
-                  style={{ color: this.props.selectedMode === mode ? 'green' : 'black', cursor: 'pointer' }}
-                  onClick={() => { this.props.handleModeSelect(mode) }}
-                >
-                  {mode}
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        <br />
+        {
+          this.props.selectedMediaType !== 'kill' &&
+          (
+            <div>
+              Select a mode:
+          <br />
+              <ul>
+                {modesList.map((mode) => {
+                  return (
+                    <li
+                      key={mode}
+                      style={{ color: this.props.selectedMode === mode ? 'green' : 'black', cursor: 'pointer' }}
+                      onClick={() => { this.props.handleModeSelect(mode) }}
+                    >
+                      {mode}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )
+        }
         <div>
           {this.props.selectedMode === 'chase' && this.props.selectedMediaType === 'video' && this.renderSingleVideoSelector()}
           {this.props.selectedMode === 'random' && this.props.selectedMediaType === 'video' && this.renderMultipleVideoSelector()}
