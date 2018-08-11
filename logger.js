@@ -17,6 +17,7 @@ const logger = winston.createLogger({
 
 module.exports = {
   info: (msg) => {
+    console.log(msg);
     logger.info(`${new Date()}: ${msg}`);
   },
   error: (msg) => {

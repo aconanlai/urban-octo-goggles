@@ -3,9 +3,11 @@ const http = require('http');
 const path = require('path');
 const WebSocket = require('ws');
 const uuid = require('uuid/v4');
+const osc = require('osc');
 
 const logger = require('./logger');
 const msgTypes = require('./msgTypes');
+const oscConverterFactory = require('./oscConverter');
 
 const app = express();
 
@@ -19,6 +21,7 @@ const connections = {
 let controller;
 
 const msgProcessor = msgTypes(connections);
+const oscConverter = oscConverterFactory();
 
 wss.on('connection', (ws) => {
   console.log('connected');
@@ -69,6 +72,35 @@ app.get('*', (req, res) => res.sendFile(path.join(__dirname + '/build/build/inde
 server.listen(process.env.PORT || 8080, () => {
   logger.info('Server started');
 });
+
+// Create an osc.js UDP Port listening on port 57121.
+var udpPort = new osc.UDPPort({
+  localAddress: "0.0.0.0",
+  localPort: 57121,
+  metadata: true
+});
+
+// Listen for incoming OSC bundles.
+udpPort.on("message", function (oscMsg) {
+  const msg = oscConverter(oscMsg);
+  if (msg) {
+    switch (msg.msgType) {
+      case 'sendVideo':
+        logger.info(`sendVideo received via udp: ${JSON.stringify(msg)}`);
+        msgProcessor.process(msg);
+        break;
+      case 'sendImage':
+        logger.info(`sendImage received via udp: ${JSON.stringify(msg)}`);
+        msgProcessor.processImage(msg);
+        break;
+      default:
+        break;
+    }
+  }
+});
+
+// Open the socket.
+udpPort.open();
 
 process
   .on('unhandledRejection', (reason, p) => {

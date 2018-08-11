@@ -6,6 +6,8 @@ import './client.css';
 class Client extends Component {
   constructor(props) {
     super(props);
+    this.randomInterval = null;
+    this.randomTimeout = null;
     this.video1 = React.createRef();
     this.video2 = React.createRef();
     this.state = {
@@ -110,6 +112,11 @@ class Client extends Component {
       [`videoId${nextVidElement}`]: idsArr[0],
       currentVidElement: nextVidElement,
       // [`videoId2`]: idsArr[0],
+    }, () => {
+      const toRef = `video${nextVidElement}`;
+      const element = this[toRef].current;
+      element.play();
+      // debugger;
     });
   }
 
@@ -117,6 +124,8 @@ class Client extends Component {
   // alternatively, clear the interval + timeout when new msg arrives
 
   playRandomImages = (ids, imageDuration) => {
+    clearTimeout(this.randomTimeout);
+    clearInterval(this.randomInterval);
     const idsArr = ids.split(',');
     this.setState({
       currentMode: 'randomImage',
@@ -124,7 +133,7 @@ class Client extends Component {
       randomImageArr: idsArr,
       imageId: idsArr[0],
     }, () => {
-      const interval = setInterval(() => {
+      this.randomInterval = setInterval(() => {
         if (this.state.currentMode === 'randomImage') {
           const nextIndex = this.state.currentRandomIndex + 1;
           const nextId = this.state.randomImageArr[nextIndex];
@@ -134,8 +143,8 @@ class Client extends Component {
           })
         }
       }, imageDuration);
-      setTimeout(() => {
-        clearInterval(interval);
+      this.randomTimeout = setTimeout(() => {
+        clearInterval(this.randomInterval);
         if (this.state.currentMode === 'randomImage') {
           this.setState({
             currentMode: null,
@@ -246,7 +255,7 @@ class Client extends Component {
     // }
     return (
       <div className="client">
-        {(this.state.videoId1 || this.state.videoId2) && this.renderVideoElements()}
+        {(this.state.currentMode === 'chase' || this.state.currentMode === 'random') && (this.state.videoId1 || this.state.videoId2) && this.renderVideoElements()}
         {(this.state.currentMode === 'chaseImage' || this.state.currentMode === 'randomImage') && this.state.imageId && this.renderImage()}
       </div>
     );
