@@ -107,6 +107,112 @@ module.exports = (connections) => {
       logger.info(`sending random mode to ${percentage}% of users (${clients.length} users) with images: ${msg.imageIds}`);
       sendToClients(clients, msg);
     },
+
+    /**
+    * send images to random user(s) by segment
+    * @param {string} msgType - like sendImage
+    * @param {Array<Array<string>>} msg.segmentContents
+    * @param {Array<number>} msg.segmentSizes
+    */
+    sendToRandomSegmented: (msg, msgType) => {
+      const { segmentContents, segmentSizes, imageDuration } = msg;
+      if (!segmentContents || !segmentSizes) {
+        logger.error('incorrect params when sending random media by segments');
+        return;
+      }
+      const totalPercentage = segmentSizes.reduce((acc, val) => {
+        return acc + val;
+      }, 0);
+      const totalClients = utils.getRandomPercentage(Object.values(connections), totalPercentage);
+      let lastCounter = 0;
+      for (let i = 0; i < segmentSizes.length; i += 1) {
+        const percentageOfWhole = segmentSizes[i] / totalPercentage;
+        const realNumberOfClients = Math.floor(totalClients.length * percentageOfWhole);
+        const toSend = totalClients.slice(lastCounter, lastCounter + realNumberOfClients);
+        lastCounter += realNumberOfClients;
+        const mediaIdPropertyName = msgType === 'sendVideo' ? 'videoIds' : 'imageIds';
+        sendToClients(toSend, {
+          msgType,
+          mode: 'random',
+          [mediaIdPropertyName]: segmentContents[i].join(','),
+          imageDuration,
+        });
+      }
+    },
+
+    /**
+    * send images chase by segment
+    * @param {Array<string>} msg.segmentContents
+    * @param {Array<number>} msg.segmentSizes
+    * @param {number} msg.interval
+    */
+    sendChaseImageSegmented: (msg) => {
+      const { segmentContents, segmentSizes, imageDuration, interval } = msg;
+      if (!segmentContents || !segmentSizes || !imageDuration || !interval) {
+        logger.error('incorrect params when sending chase image by segments');
+        return;
+      }
+      const totalPercentage = segmentSizes.reduce((acc, val) => {
+        return acc + val;
+      }, 0);
+      const totalClients = utils.getRandomPercentage(Object.values(connections), totalPercentage);
+      let lastCounter = 0;
+      for (let i = 0; i < segmentSizes.length; i += 1) {
+        const percentageOfWhole = segmentSizes[i] / totalPercentage;
+        const realNumberOfClients = Math.floor(totalClients.length * percentageOfWhole);
+        const toSend = totalClients.slice(lastCounter, lastCounter + realNumberOfClients);
+        lastCounter += realNumberOfClients;
+        for (let j = 0; j < toSend.length; j += 1) {
+          const toWait = interval * j;
+          setTimeout(() => {
+            sendToClient(toSend[j], {
+              msgType: 'sendImage',
+              mode: 'chase',
+              imageIds: segmentContents[i],
+              imageDuration,
+              interval,
+            });
+          }, toWait);
+        }
+      }
+    },
+
+    /**
+    * send video chase by segment
+    * @param {Array<string>} msg.segmentContents
+    * @param {Array<number>} msg.segmentSizes
+    * @param {number} msg.interval
+    */
+    sendChaseVideoSegmented: (msg) => {
+      const { segmentContents, segmentSizes, interval } = msg;
+      if (!segmentContents || !segmentSizes || !interval) {
+        logger.error('incorrect params when sending chase video by segments');
+        return;
+      }
+      const totalPercentage = segmentSizes.reduce((acc, val) => {
+        return acc + val;
+      }, 0);
+      const totalClients = utils.getRandomPercentage(Object.values(connections), totalPercentage);
+      let lastCounter = 0;
+      console.log('ssmsmmsms')
+      for (let i = 0; i < segmentSizes.length; i += 1) {
+        const percentageOfWhole = segmentSizes[i] / totalPercentage;
+        const realNumberOfClients = Math.floor(totalClients.length * percentageOfWhole);
+        const toSend = totalClients.slice(lastCounter, lastCounter + realNumberOfClients);
+        lastCounter += realNumberOfClients;
+        for (let j = 0; j < toSend.length; j += 1) {
+          const toWait = interval * j;
+          setTimeout(() => {
+            sendToClient(toSend[j], {
+              msgType: 'sendVideo',
+              mode: 'chase',
+              videoIds: segmentContents[i],
+              interval,
+            });
+          }, toWait);
+        }
+      }
+    },
   };
 
   return {
@@ -117,12 +223,15 @@ module.exports = (connections) => {
      */
     process: (msg) => {
       switch (msg.mode) {
-        case 'all':
-          return types.sendToAll(msg);
         case 'random':
           return types.sendToRandom(msg);
         case 'chase':
           return types.sendChase(msg);
+        case 'randomSegmented':
+          return types.sendToRandomSegmented(msg, 'sendVideo');
+        case 'chaseSegmented':
+          console.log('uijjjjj')
+          return types.sendChaseVideoSegmented(msg);
         default:
           break;
       }
@@ -139,6 +248,10 @@ module.exports = (connections) => {
           return types.sendImageToRandom(msg);
         case 'chase':
           return types.sendImageChase(msg);
+        case 'randomSegmented':
+          return types.sendToRandomSegmented(msg, 'sendImage');
+        case 'chaseSegmented':
+          return types.sendChaseImageSegmented(msg);
         default:
           break;
       }

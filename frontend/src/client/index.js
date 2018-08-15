@@ -45,6 +45,7 @@ class Client extends Component {
           this.processImageMsg(data);
         }
         if (data.msgType === 'sendKill') {
+          this.clearRandomImageTimeout();
           this.setState({
             currentMode: null,
           })
@@ -188,7 +189,7 @@ class Client extends Component {
     this.setState({
       currentVidElement,
     });
-    const otherId = currentVidElement === 1 ? 2: 1;
+    const otherId = currentVidElement === 1 ? 2 : 1;
     const toRef = `video${otherId}`;
     const element = this[toRef].current;
     element.pause();
@@ -200,35 +201,40 @@ class Client extends Component {
     console.log('ended')
     if (this.state.currentVidElement === elementNumber) {
       const { currentMode } = this.state;
-      if (currentMode === 'random' 
-          // && (this.state.currentRandomIndex < this.state.randomVidArr.length - 1)
-          ) {
-            console.log('in array of random, go to next')
-            // in array of random, go to next
-            let nextIndex;
-            if (this.state.randomVidArr.length > 1) {
-              const indicesArr = Array.apply(null, { length: this.state.randomVidArr.length }).map(Number.call, Number);
-              indicesArr.splice(this.state.currentRandomIndex, 1);
-              nextIndex = indicesArr[Math.floor(Math.random() * indicesArr.length)];
-            } else {
-              nextIndex = this.state.currentRandomIndex;
-            }
-            const nextId = this.state.randomVidArr[nextIndex];
-            const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
-            // const nextIndex = this.state.currentRandomIndex + 1;
-            // const nextId = this.state.randomVidArr[nextIndex];
-            this.setState({
-              [`videoId${nextVidElement}`]: nextId,
-              currentRandomIndex: nextIndex,
-              currentVidElement: nextVidElement,
-            }, () => {
-              // need to do this if 'next' video is same as 'previous' video so element still has it loaded on the last frame
-              const toRef = `video${nextVidElement}`;
-              const element = this[toRef].current;
-              element.play();
-            });
-            return
-          }
+      if (currentMode === 'random'
+        // && (this.state.currentRandomIndex < this.state.randomVidArr.length - 1)
+      ) {
+        console.log('in array of random, go to next')
+        // in array of random, go to next
+        let nextIndex;
+        if (this.state.randomVidArr.length > 1) {
+          const indicesArr = Array.apply(null, { length: this.state.randomVidArr.length }).map(Number.call, Number);
+          indicesArr.splice(this.state.currentRandomIndex, 1);
+          nextIndex = indicesArr[Math.floor(Math.random() * indicesArr.length)];
+        } else {
+          nextIndex = this.state.currentRandomIndex;
+        }
+        const nextId = this.state.randomVidArr[nextIndex];
+        const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
+        // const nextIndex = this.state.currentRandomIndex + 1;
+        // const nextId = this.state.randomVidArr[nextIndex];
+        this.setState({
+          [`videoId${nextVidElement}`]: nextId,
+          currentRandomIndex: nextIndex,
+          currentVidElement: nextVidElement,
+        }, () => {
+          // need to do this if 'next' video is same as 'previous' video so element still has it loaded on the last frame
+          const toRef = `video${nextVidElement}`;
+          const element = this[toRef].current;
+          element.play();
+        });
+        return
+      } else if (currentMode === 'chase') {
+        this.clearRandomImageTimeout();
+        this.setState({
+          currentMode: null,
+        })
+      }
       // TODO: handle varying ending cases
       // this.setState({
       //   videoId1: null,
@@ -241,26 +247,26 @@ class Client extends Component {
     return (
       <div>
         {
-        // this.state.videoId1 && 
-        <video ref={this.video1}
-          style={{ display: this.state.currentVidElement === 1 ? 'block' : 'none'}}
-          // src={`http://67.205.170.55:8080/${this.state.videoId1}.mp4`}
-          // src={`http://localhost:3000/${this.state.videoId1}.mp4`}
-          src={`${config.filesPath}/${this.state.videoId1}.mp4`}
-          onPlay={() => {this.onPlay(1)}}
-          onEnded={() => {this.onEnded(1)}}
-          autoPlay muted
-        />}
+          // this.state.videoId1 && 
+          <video ref={this.video1}
+            style={{ display: this.state.currentVidElement === 1 ? 'block' : 'none' }}
+            // src={`http://67.205.170.55:8080/${this.state.videoId1}.mp4`}
+            // src={`http://localhost:3000/${this.state.videoId1}.mp4`}
+            src={`${config.filesPath}/${this.state.videoId1}.mp4`}
+            onPlay={() => { this.onPlay(1) }}
+            onEnded={() => { this.onEnded(1) }}
+            autoPlay muted
+          />}
         {
           // this.state.videoId2 &&
           <video ref={this.video2}
-          style={{ display: this.state.currentVidElement === 2 ? 'block' : 'none'}}
-          // src={`http://67.205.170.55:8080/${this.state.videoId2}.mp4`}
-          src={`${config.filesPath}/${this.state.videoId2}.mp4`}
-          onPlay={() => {this.onPlay(2)}}
-          onEnded={() => {this.onEnded(2)}}
-          autoPlay muted
-        />}
+            style={{ display: this.state.currentVidElement === 2 ? 'block' : 'none' }}
+            // src={`http://67.205.170.55:8080/${this.state.videoId2}.mp4`}
+            src={`${config.filesPath}/${this.state.videoId2}.mp4`}
+            onPlay={() => { this.onPlay(2) }}
+            onEnded={() => { this.onEnded(2) }}
+            autoPlay muted
+          />}
       </div>
     )
   }
@@ -270,7 +276,7 @@ class Client extends Component {
       <img
         className="image"
         src={`${config.filesPath}/images/${this.state.imageId}.jpg`}
-        // src={this.assetCacher.images[this.state.imageId]}
+      // src={this.assetCacher.images[this.state.imageId]}
       />
     )
   }
