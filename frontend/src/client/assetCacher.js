@@ -16,15 +16,43 @@ export class AssetCacher {
             resolve();
           }
           img.src = `${config.filesPath}/images/${imgId}.jpg`;
+        } else {
+          resolve();
         }
-        resolve();
       })
     })
     return await Promise.all(promises);
   }
 
   preloadVideos = (videoIdArray) => {
-    // TODO
-    // http://dinbror.dk/blog/how-to-preload-entire-html5-video-before-play-solved/
+    const [first, ...rest] = videoIdArray;
+    const restPromises = rest.map((videoId) => {
+      return this.fetchVideo(videoId);
+    });
+    Promise.all(restPromises);
+    return this.fetchVideo(first);
+  }
+
+  fetchVideo = (videoId) => {
+    return new Promise((resolve) => {
+      if (this.videos[videoId]) {
+        resolve();
+      }
+      var req = new XMLHttpRequest();
+      req.open('GET', `${config.filesPath}/${videoId}.jpg`, true);
+      req.responseType = 'blob';
+  
+      req.onload = () => {
+        if (this.status === 200) {
+          this.videos[videoId] = true;
+        }
+        resolve();
+      }
+      req.onerror = () => {
+        console.log(`error pre-fetching video: ${videoId}`);
+        resolve();
+      }
+      req.send();
+    })
   }
 }

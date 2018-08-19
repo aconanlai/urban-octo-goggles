@@ -26,7 +26,7 @@ module.exports = () => {
           msgType: 'sendVideo',
           mode: 'random',
           percentage: args[0].value,
-          videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }),
+          videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }).join(','),
         };
         break;
       case '/send_chase_image':
@@ -53,7 +53,7 @@ module.exports = () => {
           mode: 'random',
           percentage: args[0].value,
           imageDuration: args[1].value,
-          imageIds: args.slice(1, args.length).map((arg) => { return arg.value; }),
+          imageIds: args.slice(1, args.length).map((arg) => { return arg.value; }).join(','),
         };
         break;
       case '/send_kill':

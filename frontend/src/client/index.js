@@ -27,18 +27,17 @@ class Client extends Component {
     this.onPlay = this.onPlay.bind(this);
     this.onEnded = this.onEnded.bind(this);
     this.playNextRandomMedia = this.playNextRandomMedia.bind(this);
+    this.handleVideoPlay = this.handleVideoPlay.bind(this);
   }
 
   openWs = () => {
     this.ws = new WebSocket(config.socketEndpoint);
-    // this.ws = new WebSocket("ws://67.205.170.55:8080");
-    // TODO: establish socket
     this.ws.onopen = (event) => {
       console.log('connected');
       this.ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
         console.log(data);
-        if (data.msgType === 'sendVideo') {
+        if (data.msgType === 'sendVideo' && this.imageOnlyMode !== true) {
           this.processVideoMsg(data);
         }
         if (data.msgType === 'sendImage') {
@@ -53,10 +52,11 @@ class Client extends Component {
       }
     };
     this.ws.onclose = () => {
+      const waitTime = Math.floor(Math.random() * 8000);
       setTimeout(() => {
         console.log('ws closed, auto re-connecting');
         this.openWs();
-      }, 1000);
+      }, waitTime);
     };
   }
 
@@ -111,8 +111,9 @@ class Client extends Component {
     })
   }
 
-  playRandomVideos = (ids) => {
+  playRandomVideos = async (ids) => {
     const idsArr = ids.split(',');
+    await this.assetCacher.preloadVideos(idsArr);
     const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
     this.setState({
       currentMode: 'random',
@@ -120,12 +121,10 @@ class Client extends Component {
       randomVidArr: idsArr,
       [`videoId${nextVidElement}`]: idsArr[Math.floor(Math.random() * idsArr.length)],
       currentVidElement: nextVidElement,
-      // [`videoId2`]: idsArr[0],
     }, () => {
       const toRef = `video${nextVidElement}`;
       const element = this[toRef].current;
-      element.play();
-      // debugger;
+      this.handleVideoPlay(element);
     });
   }
 
@@ -171,12 +170,32 @@ class Client extends Component {
     });
   }
 
+  handleVideoPlay = (videoElement) => {
+    const playPromise = videoElement.play();
+
+    // In browsers that don’t yet support this functionality,
+    // playPromise won’t be defined.
+    if (playPromise !== undefined && this.checkedVideoAutoplay !== true) {
+      playPromise.then(() => {
+        this.checkedVideoAutoplay = true;
+      }).catch((error) => {
+        console.log(error);
+        this.checkedVideoAutoplay = true;
+        this.imageOnlyMode = true;
+      });
+    }
+  }
+
   playSingleVideo = (id) => {
     const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
     this.setState({
       [`videoId${nextVidElement}`]: id,
       // [`videoId2`]: id,
       currentVidElement: nextVidElement,
+    }, () => {
+      const toRef = `video${nextVidElement}`;
+      const element = this[toRef].current;
+      this.handleVideoPlay(element);
     });
   }
 
@@ -226,7 +245,7 @@ class Client extends Component {
           // need to do this if 'next' video is same as 'previous' video so element still has it loaded on the last frame
           const toRef = `video${nextVidElement}`;
           const element = this[toRef].current;
-          element.play();
+          this.handleVideoPlay(element);
         });
         return
       } else if (currentMode === 'chase') {
@@ -255,7 +274,7 @@ class Client extends Component {
             src={`${config.filesPath}/${this.state.videoId1}.mp4`}
             onPlay={() => { this.onPlay(1) }}
             onEnded={() => { this.onEnded(1) }}
-            autoPlay muted
+            muted
           />}
         {
           // this.state.videoId2 &&
@@ -265,7 +284,7 @@ class Client extends Component {
             src={`${config.filesPath}/${this.state.videoId2}.mp4`}
             onPlay={() => { this.onPlay(2) }}
             onEnded={() => { this.onEnded(2) }}
-            autoPlay muted
+            muted
           />}
       </div>
     )
