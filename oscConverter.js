@@ -26,7 +26,7 @@ module.exports = () => {
           msgType: 'sendVideo',
           mode: 'random',
           percentage: args[0].value,
-          videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }),
+          videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }).join(','),
         };
         break;
       case '/send_chase_image':
