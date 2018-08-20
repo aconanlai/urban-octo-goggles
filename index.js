@@ -4,6 +4,9 @@ const path = require('path');
 const WebSocket = require('ws');
 const uuid = require('uuid/v4');
 const osc = require('osc');
+const morgan  = require('morgan')
+const compression = require('compression')
+
 // const simulateLatency = require('express-simulate-latency');
 
 const logger = require('./logger');
@@ -11,6 +14,13 @@ const msgTypes = require('./msgTypes');
 const oscConverterFactory = require('./oscConverter');
 
 const app = express();
+
+app.use(morgan('combined'))
+morgan('combined')
+
+morgan(':remote-addr :method :url')
+
+app.use(compression());
 
 const server = http.createServer(app);
 
@@ -102,6 +112,10 @@ udpPort.on("message", function (oscMsg) {
       case 'sendImage':
         logger.info(`sendImage received via udp: ${JSON.stringify(msg)}`);
         msgProcessor.processImage(msg);
+        break;
+      case 'sendKill':
+        logger.info(`sendKill received via udp: ${JSON.stringify(msg)}`);
+        msgProcessor.processKill(msg);
         break;
       default:
         break;

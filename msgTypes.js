@@ -194,7 +194,6 @@ module.exports = (connections) => {
       }, 0);
       const totalClients = utils.getRandomPercentage(Object.values(connections), totalPercentage);
       let lastCounter = 0;
-      console.log('ssmsmmsms')
       for (let i = 0; i < segmentSizes.length; i += 1) {
         const percentageOfWhole = segmentSizes[i] / totalPercentage;
         const realNumberOfClients = Math.floor(totalClients.length * percentageOfWhole);

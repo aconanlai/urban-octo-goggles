@@ -53,7 +53,7 @@ module.exports = () => {
           mode: 'random',
           percentage: args[0].value,
           imageDuration: args[1].value,
-          imageIds: args.slice(1, args.length).map((arg) => { return arg.value; }),
+          imageIds: args.slice(2, args.length).map((arg) => { return arg.value; }).join(','),
         };
         break;
       case '/send_kill':
@@ -203,6 +203,7 @@ function handleSegmentedVideoRandom(args) {
 }
 
 function handleSegmentedVideoChase(args) {
+  console.log(args)
   if (args.length <= 5) {
     logger.error('incorrect number of arguments for send_segmented_chase_video');
     return null;
