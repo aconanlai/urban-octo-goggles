@@ -16,8 +16,8 @@ class Client extends Component {
       videoId1: null,
       videoId2: null,
       currentVidElement: 1,
-      currentMode: null,
-      imageId: null,
+      currentMode: 'chaseImage',
+      imageId: 'apples',
       randomVidArr: [],
       randomImageArr: [],
       currentRandomIndex: 0,
@@ -240,12 +240,14 @@ class Client extends Component {
         this.setState({
           [`videoId${nextVidElement}`]: nextId,
           currentRandomIndex: nextIndex,
-          currentVidElement: nextVidElement,
         }, () => {
           // need to do this if 'next' video is same as 'previous' video so element still has it loaded on the last frame
           const toRef = `video${nextVidElement}`;
           const element = this[toRef].current;
           this.handleVideoPlay(element);
+          this.setState({
+            currentVidElement: nextVidElement,
+          })
         });
         return
       } else if (currentMode === 'chase') {
@@ -263,38 +265,47 @@ class Client extends Component {
   }
 
   renderVideoElements = () => {
+    const src1 = this.state.videoId1 ? `${config.filesPath}/${this.state.videoId1}.mp4` : null;
+    const src2 = this.state.videoId2 ? `${config.filesPath}/${this.state.videoId2}.mp4` : null;
     return (
-      <div>
+      <div className="videoContainer">
         {
           // this.state.videoId1 && 
           <video ref={this.video1}
-            style={{ display: this.state.currentVidElement === 1 ? 'block' : 'none' }}
+            style={{ display: (this.state.currentMode === 'chase' || this.state.currentMode === 'random') && this.state.currentVidElement === 1 ? 'block' : 'none' }}
             // src={`http://67.205.170.55:8080/${this.state.videoId1}.mp4`}
             // src={`http://localhost:3000/${this.state.videoId1}.mp4`}
-            src={`${config.filesPath}/${this.state.videoId1}.mp4`}
+            src={src1}
             onPlay={() => { this.onPlay(1) }}
             onEnded={() => { this.onEnded(1) }}
             muted
-          />}
+          />
+        }
         {
           // this.state.videoId2 &&
           <video ref={this.video2}
-            style={{ display: this.state.currentVidElement === 2 ? 'block' : 'none' }}
+            style={{ display: (this.state.currentMode === 'chase' || this.state.currentMode === 'random') && this.state.currentVidElement === 2 ? 'block' : 'none' }}
             // src={`http://67.205.170.55:8080/${this.state.videoId2}.mp4`}
-            src={`${config.filesPath}/${this.state.videoId2}.mp4`}
+            src={src2}
             onPlay={() => { this.onPlay(2) }}
             onEnded={() => { this.onEnded(2) }}
             muted
-          />}
+          />
+        }
       </div>
     )
   }
 
   renderImage = () => {
+    const display = (this.state.currentMode === 'chaseImage' || this.state.currentMode === 'randomImage') && this.state.imageId
+      ? 'block' : 'none';
+    console.log(display);
+    const src = this.state.imageId ? `${config.filesPath}/images/${this.state.imageId}.jpg` : null;
     return (
       <img
+        style={{ display }}
         className="image"
-        src={`${config.filesPath}/images/${this.state.imageId}.jpg`}
+        src={src}
       // src={this.assetCacher.images[this.state.imageId]}
       />
     )
@@ -312,8 +323,8 @@ class Client extends Component {
     // }
     return (
       <div className="client">
-        {(this.state.currentMode === 'chase' || this.state.currentMode === 'random') && (this.state.videoId1 || this.state.videoId2) && this.renderVideoElements()}
-        {(this.state.currentMode === 'chaseImage' || this.state.currentMode === 'randomImage') && this.state.imageId && this.renderImage()}
+        {this.renderVideoElements()}
+        {this.renderImage()}
       </div>
     );
   }
