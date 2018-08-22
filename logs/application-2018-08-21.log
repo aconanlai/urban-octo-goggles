@@ -1,1 +1,86 @@
 {"message":"Tue Aug 21 2018 19:39:40 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 19:44:59 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 19:45:42 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:29 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"apples,bananas,pears\",\"imageDuration\":500}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:29 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with images: apples,bananas,pears","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:33 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"apples,bananas,pears\",\"imageDuration\":\"50\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:33 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with images: apples,bananas,pears","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:38 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"apples\",\"imageDuration\":\"50\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:38 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with image: apples","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:39 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"apples\",\"imageDuration\":\"50\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:39 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with image: apples","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:40 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"apples\",\"imageDuration\":\"50\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:40 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with image: apples","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:40 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"apples\",\"imageDuration\":\"50\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:40 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with image: apples","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:46 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"ducks\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:46 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: ducks","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:52 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"ducks\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:52 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: ducks","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:59 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"ducks,forest,waves\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:46:59 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: ducks,forest,waves","level":"info"}
+{"message":"Tue Aug 21 2018 19:47:24 GMT-0400 (EDT): sendKill received: {\"msgType\":\"sendKill\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"apples,bananas,pears\",\"imageDuration\":\"50\"}","level":"info"}
+{"message":"Tue Aug 21 2018 19:47:24 GMT-0400 (EDT): sending kill msg to 100% of users (1 users)","level":"info"}
+{"message":"Tue Aug 21 2018 20:06:58 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:07:11 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:07:14 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:07:15 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:08:13 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:08:29 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:08:47 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:09:52 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:09:56 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:04 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:04 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: blink","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:06 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:06 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: blink","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:07 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:07 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: blink","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:08 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:08 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: blink","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:49 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:49 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: blink","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:50 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:10:50 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: blink","level":"info"}
+{"message":"Tue Aug 21 2018 20:11:00 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:11:00 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: blink","level":"info"}
+{"message":"Tue Aug 21 2018 20:11:20 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"headback2,headback,resting\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:11:20 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: headback2,headback,resting","level":"info"}
+{"message":"Tue Aug 21 2018 20:12:38 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"headback2,headback,phone\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:12:38 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: headback2,headback,phone","level":"info"}
+{"message":"Tue Aug 21 2018 20:18:52 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:20:04 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:20:49 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:21:20 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:21:36 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:21:59 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:22:02 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:22:11 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:23:05 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:23:12 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"lightdownward,headback3app,resting\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:23:12 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: lightdownward,headback3app,resting","level":"info"}
+{"message":"Tue Aug 21 2018 20:23:15 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"lightdownward,headback3app,resting\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:23:15 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: lightdownward,headback3app,resting","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:04 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:10 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"lightdownward,headback3app,resting\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:10 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: lightdownward,headback3app,resting","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:26 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"headback2\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:26 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: headback2","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:42 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"headback2\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:42 GMT-0400 (EDT): sending chase mode to 100% of users (1 users) with video: headback2","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:45 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"lightdownward,headback3app,resting\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:45 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: lightdownward,headback3app,resting","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:52 GMT-0400 (EDT): sendVideo received: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"videoIds\":\"logovid,phone,resting\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:25:52 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with videos: logovid,phone,resting","level":"info"}
+{"message":"Tue Aug 21 2018 20:26:02 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"light3,text_byod,face_red\",\"imageDuration\":500}","level":"info"}
+{"message":"Tue Aug 21 2018 20:26:02 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with images: light3,text_byod,face_red","level":"info"}
+{"message":"Tue Aug 21 2018 20:26:56 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:27:07 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"light3,text_byod,face_red\",\"imageDuration\":500}","level":"info"}
+{"message":"Tue Aug 21 2018 20:27:07 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with images: light3,text_byod,face_red","level":"info"}
+{"message":"Tue Aug 21 2018 20:27:38 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:27:49 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":0,\"interval\":1000,\"imageIds\":\"light3,text_byod,face_red\",\"imageDuration\":\"100\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:27:49 GMT-0400 (EDT): incorrect params when sending random video","level":"error"}
+{"message":"Tue Aug 21 2018 20:28:07 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:28:22 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Tue Aug 21 2018 20:28:32 GMT-0400 (EDT): sendImage received: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":\"100\",\"interval\":1000,\"imageIds\":\"light3,text_byod,face_red\",\"imageDuration\":\"100\"}","level":"info"}
+{"message":"Tue Aug 21 2018 20:28:32 GMT-0400 (EDT): sending random mode to 100% of users (1 users) with images: light3,text_byod,face_red","level":"info"}

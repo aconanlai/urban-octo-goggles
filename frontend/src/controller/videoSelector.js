@@ -6,6 +6,14 @@ class VideoSelector extends Component {
   renderSingleImageSelector() {
     return (
       <div>
+        Enter an interval (milliseconds):
+        <input type="number" value={this.props.selectedInterval} onChange={this.props.handleIntervalSelect} />
+        <br />
+        <br />
+        Enter a duration (milliseconds):
+        <input type="number" value={this.props.selectedImageDuration} onChange={this.props.handleImageDurationSelect} />
+        <br />
+        <br />
         Select an image:
         <ul>
           {this.props.imageList.map((image) => {
@@ -22,12 +30,6 @@ class VideoSelector extends Component {
         </ul>
         <br />
         <br />
-        Enter an interval (milliseconds):
-        <input type="number" value={this.props.selectedInterval} onChange={this.props.handleIntervalSelect} />
-        <br />
-        <br />
-        Enter a duration (milliseconds):
-        <input type="number" value={this.props.selectedImageDuration} onChange={this.props.handleImageDurationSelect} />
       </div>
     )
   }
@@ -35,6 +37,21 @@ class VideoSelector extends Component {
   renderMultipleImageSelector() {
     return (
       <div>
+        Enter a duration (milliseconds):
+        <input type="number" value={this.props.selectedImageDuration} onChange={this.props.handleImageDurationSelect} />
+        <br />
+        <br />
+        <br />
+        Enter comma separated list of imagesIds from above list:
+        <br />
+        <textarea
+          value={this.props.selectedImageList}
+          onChange={this.props.handleMultipleImageSelect}
+          placeholder="light3,text_byod,face_red"
+          style={{ height: '100px', width: '80%' }}
+        />
+        <br />
+        <br />
         Available images:
         <ul>
           {this.props.imageList.map((image) => {
@@ -47,19 +64,7 @@ class VideoSelector extends Component {
             );
           })}
         </ul>
-        <br />
-        Enter comma separated list of imagesIds from above list:
-        <br />
-        <textarea
-          value={this.props.selectedImageList}
-          onChange={this.props.handleMultipleImageSelect}
-          placeholder="bananas,apples,pears"
-          style={{ height: '400px', width: '80%' }}
-        />
-        <br />
-        <br />
-        Enter a duration (milliseconds):
-        <input type="number" value={this.props.selectedImageDuration} onChange={this.props.handleImageDurationSelect} />
+        
       </div>
     )
   }
@@ -110,7 +115,7 @@ class VideoSelector extends Component {
         <textarea
           value={this.props.selectedVideoList}
           onChange={this.props.handleMultipleVideoSelect}
-          placeholder="ducks,forest,waterfall"
+          placeholder="lightdownward,headback3app,resting"
           style={{ height: '400px', width: '80%' }}
         />
       </div>
