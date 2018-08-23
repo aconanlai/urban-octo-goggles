@@ -96,7 +96,7 @@ class Controller extends Component {
     // this.ws = new WebSocket("ws://67.205.170.55:8080");
     // TODO: establish socket
     this.ws.onopen = (event) => {
-      console.log('connected');
+      // console.log('connected');
       this.ws.send(JSON.stringify({
         msgType: 'registerController',
       }));

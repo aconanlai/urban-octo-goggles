@@ -49,7 +49,6 @@ export class AssetCacher {
         resolve();
       }
       req.onerror = () => {
-        console.log(`error pre-fetching video: ${videoId}`);
         resolve();
       }
       req.send();

@@ -19,8 +19,7 @@ class Client extends Component {
       videoId2: null,
       currentVidElement: 1,
       currentMode: 'chaseImage',
-      // imageId: 'land',
-      imageId: 'mask3',
+      imageId: 'land',
       randomVidArr: [],
       randomImageArr: [],
       currentRandomIndex: 0,
@@ -56,7 +55,7 @@ class Client extends Component {
     this.ws.onclose = () => {
       const waitTime = Math.floor(Math.random() * 8000);
       setTimeout(() => {
-        console.log('ws closed, auto re-connecting');
+        // console.log('ws closed, auto re-connecting');
         this.openWs();
       }, waitTime);
     };
@@ -153,7 +152,7 @@ class Client extends Component {
   playRandomImages = async (ids, randomDuration) => {
     const idsArr = ids.split(',');
     await this.assetCacher.preloadImages(idsArr);
-    console.log('image preloading complete')
+    // console.log('image preloading complete')
     this.setState({
       randomDuration,
       currentMode: 'randomImage',
@@ -175,7 +174,7 @@ class Client extends Component {
       playPromise.then(() => {
         this.checkedVideoAutoplay = true;
       }).catch((error) => {
-        console.log(error);
+        // console.log(error);
         this.checkedVideoAutoplay = true;
         this.setState({
           currentMode: null,

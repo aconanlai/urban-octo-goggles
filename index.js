@@ -4,7 +4,7 @@ const path = require('path');
 const WebSocket = require('ws');
 const uuid = require('uuid/v4');
 const osc = require('osc');
-const morgan  = require('morgan')
+const morgan = require('morgan')
 const compression = require('compression')
 
 // const simulateLatency = require('express-simulate-latency');
@@ -15,16 +15,16 @@ const oscConverterFactory = require('./oscConverter');
 
 const app = express();
 
-app.use(morgan('combined'))
-morgan('combined')
+app.use(morgan('combined'));
+morgan('combined');
 
-morgan(':remote-addr :method :url')
+morgan(':remote-addr :method :url');
 
 app.use(compression());
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   next();
 });
 
@@ -44,7 +44,6 @@ const msgProcessor = msgTypes(connections);
 const oscConverter = oscConverterFactory();
 
 wss.on('connection', (ws) => {
-  console.log('connected');
   const id = uuid();
   ws.id = id;
   connections[id] = ws;
@@ -92,25 +91,22 @@ function sendClientsList() {
 app.use(express.static(__dirname + '/build', {
   maxage: 86400000,
 }));
-app.post('*', (req, res) => {
-  console.log('posted');
-});
 app.get('*', (req, res) => res.sendFile(path.join(__dirname + '/build/index.html')));
 
 // start our server
-server.listen(process.env.PORT || 8080, () => {
+server.listen(process.env.PORT || 80, () => {
   logger.info('Server started');
 });
 
 // Create an osc.js UDP Port listening on port 57121.
 var udpPort = new osc.UDPPort({
-  localAddress: "0.0.0.0",
+  localAddress: '0.0.0.0',
   localPort: 57121,
   metadata: true
 });
 
 // Listen for incoming OSC bundles.
-udpPort.on("message", function (oscMsg) {
+udpPort.on('message', (oscMsg) => {
   logger.info(oscMsg);
   const msg = oscConverter(oscMsg);
   if (msg) {
@@ -143,6 +139,5 @@ process
   })
   .on('uncaughtException', err => {
     logger.error(`unhandledRejection: err: ${err}`);
-    console.log(err);
     process.exit(1);
   });
