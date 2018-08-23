@@ -19,11 +19,13 @@ class Client extends Component {
       videoId2: null,
       currentVidElement: 1,
       currentMode: 'chaseImage',
-      imageId: 'land',
+      // imageId: 'land',
+      imageId: 'mask3',
       randomVidArr: [],
       randomImageArr: [],
       currentRandomIndex: 0,
       randomDuration: 100,
+      imageOnlyMode: false,
     }
     this.renderVideoElements = this.renderVideoElements.bind(this);
     this.onPlay = this.onPlay.bind(this);
@@ -37,7 +39,7 @@ class Client extends Component {
     this.ws.onopen = (event) => {
       this.ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
-        if (data.msgType === 'sendVideo' && this.imageOnlyMode !== true) {
+        if (data.msgType === 'sendVideo' && this.state.imageOnlyMode !== true) {
           this.processVideoMsg(data);
         }
         if (data.msgType === 'sendImage') {
@@ -175,8 +177,16 @@ class Client extends Component {
       }).catch((error) => {
         console.log(error);
         this.checkedVideoAutoplay = true;
-        this.imageOnlyMode = true;
+        this.setState({
+          currentMode: null,
+          imageOnlyMode: true,
+        })
       });
+    } else if (playPromise === undefined) {
+      this.setState({
+        currentMode: null,
+        imageOnlyMode: true,
+      })
     }
   }
 
@@ -299,8 +309,8 @@ class Client extends Component {
     //   </div>)
     // }
     return (
-      <div className="client">
-        {this.renderVideoElements()}
+      <div id="client" className="client">
+        {!this.state.imageOnlyMode && this.renderVideoElements()}
         {this.renderImage()}
       </div>
     );
