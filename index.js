@@ -92,6 +92,9 @@ function sendClientsList() {
 app.use(express.static(__dirname + '/build', {
   maxage: 86400000,
 }));
+app.post('*', (req, res) => {
+  console.log('posted');
+});
 app.get('*', (req, res) => res.sendFile(path.join(__dirname + '/build/index.html')));
 
 // start our server
@@ -108,6 +111,7 @@ var udpPort = new osc.UDPPort({
 
 // Listen for incoming OSC bundles.
 udpPort.on("message", function (oscMsg) {
+  logger.info(oscMsg);
   const msg = oscConverter(oscMsg);
   if (msg) {
     switch (msg.msgType) {

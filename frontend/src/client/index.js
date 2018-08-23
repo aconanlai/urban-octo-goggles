@@ -19,7 +19,7 @@ class Client extends Component {
       videoId2: null,
       currentVidElement: 1,
       currentMode: 'chaseImage',
-      imageId: 'apples',
+      imageId: 'land',
       randomVidArr: [],
       randomImageArr: [],
       currentRandomIndex: 0,
@@ -35,10 +35,8 @@ class Client extends Component {
   openWs = () => {
     this.ws = new WebSocket(config.socketEndpoint);
     this.ws.onopen = (event) => {
-      console.log('connected');
       this.ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
-        console.log(data);
         if (data.msgType === 'sendVideo' && this.imageOnlyMode !== true) {
           this.processVideoMsg(data);
         }
@@ -200,7 +198,6 @@ class Client extends Component {
   }
 
   onPlay = (currentVidElement) => {
-    console.log('playing');
     this.setState({
       currentVidElement,
     });
@@ -213,11 +210,9 @@ class Client extends Component {
 
   // TODO: test all of this with very short videos
   onEnded = (elementNumber) => {
-    console.log('ended')
     if (this.state.currentMode === 'random'
       // && (this.state.currentRandomIndex < this.state.randomVidArr.length - 1)
     ) {
-      console.log('in array of random, go to next')
       // in array of random, go to next
       let nextIndex;
       if (this.state.randomVidArr.length > 1) {
@@ -282,7 +277,6 @@ class Client extends Component {
   renderImage = () => {
     const display = (this.state.currentMode === 'chaseImage' || this.state.currentMode === 'randomImage') && this.state.imageId
       ? 'block' : 'none';
-    console.log(display);
     const src = this.state.imageId ? `${config.filesPath}/images/${this.state.imageId}.jpg` : null;
     return (
       <img

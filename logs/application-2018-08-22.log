@@ -1,0 +1,14 @@
+{"message":"Wed Aug 22 2018 00:07:27 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:08:19 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:09:00 GMT-0400 (EDT): unhandledRejection: err: Error: The header of an OSC packet didn't contain an OSC address or a #bundle string. Header was: hello","level":"error"}
+{"message":"Wed Aug 22 2018 00:09:15 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:10:25 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:10:58 GMT-0400 (EDT): unhandledRejection: err: Error: The header of an OSC packet didn't contain an OSC address or a #bundle string. Header was: hello","level":"error"}
+{"message":"Wed Aug 22 2018 00:11:45 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:24:08 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:26:48 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:29:31 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:42:06 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:42:08 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 00:42:11 GMT-0400 (EDT): Server started","level":"info"}
+{"message":"Wed Aug 22 2018 19:33:09 GMT-0400 (EDT): Server started","level":"info"}
