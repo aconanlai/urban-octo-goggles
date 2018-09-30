@@ -4,8 +4,7 @@ const path = require('path');
 const WebSocket = require('ws');
 const uuid = require('uuid/v4');
 const osc = require('osc');
-const morgan = require('morgan')
-const compression = require('compression')
+const compression = require('compression');
 
 // const simulateLatency = require('express-simulate-latency');
 
@@ -15,10 +14,10 @@ const oscConverterFactory = require('./oscConverter');
 
 const app = express();
 
-app.use(morgan('combined'));
-morgan('combined');
+// app.use(morgan('combined'));
+// morgan('combined');
 
-morgan(':remote-addr :method :url');
+// morgan(':remote-addr :method :url');
 
 app.use(compression());
 
@@ -29,9 +28,6 @@ app.use((req, res, next) => {
 });
 
 const server = http.createServer(app);
-
-// const smallLag = simulateLatency({ min: 500, max: 500 });
-// app.use(smallLag);
 
 const wss = new WebSocket.Server({ server });
 
@@ -99,10 +95,10 @@ server.listen(process.env.PORT || 80, () => {
 });
 
 // Create an osc.js UDP Port listening on port 57121.
-var udpPort = new osc.UDPPort({
+const udpPort = new osc.UDPPort({
   localAddress: '0.0.0.0',
   localPort: 57121,
-  metadata: true
+  metadata: true,
 });
 
 // Listen for incoming OSC bundles.

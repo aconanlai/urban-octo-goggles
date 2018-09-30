@@ -39,11 +39,9 @@ module.exports = (connections) => {
       const realPercentage = Number(percentage);
       const clients = utils.getRandomPercentage(Object.values(connections), realPercentage);
       logger.info(`sending chase mode to ${percentage}% of users (${clients.length} users) with video: ${msg.videoIds}`);
-      // const videoLength = videos[videoIds].length;
       const videoLength = 100;
       for (let i = 0; i < clients.length; i += 1) {
         const toWait = msg.interval ? msg.interval * i : videoLength * i;
-        // console.log(`setting timeout for user ${i} of ${toWait} ms`);
         setTimeout(() => {
           sendToClient(clients[i], msg);
         }, toWait);
@@ -85,7 +83,6 @@ module.exports = (connections) => {
       logger.info(`sending chase mode to ${percentage}% of users (${clients.length} users) with image: ${msg.imageIds}`);
       for (let i = 0; i < clients.length; i += 1) {
         const toWait = interval * i;
-        // console.log(`setting timeout for user ${i} of ${toWait} ms`);
         setTimeout(() => {
           sendToClient(clients[i], msg);
         }, toWait);
@@ -230,7 +227,6 @@ module.exports = (connections) => {
         case 'randomSegmented':
           return types.sendToRandomSegmented(msg, 'sendVideo');
         case 'chaseSegmented':
-          console.log('uijjjjj')
           return types.sendChaseVideoSegmented(msg);
         default:
           break;

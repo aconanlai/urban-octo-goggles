@@ -55,7 +55,6 @@ class Client extends Component {
     this.ws.onclose = () => {
       const waitTime = Math.floor(Math.random() * 8000);
       setTimeout(() => {
-        // console.log('ws closed, auto re-connecting');
         this.openWs();
       }, waitTime);
     };
@@ -109,14 +108,11 @@ class Client extends Component {
   playRandomVideos = async (ids) => {
     const idsArr = ids.split(',');
     await this.assetCacher.preloadVideos(idsArr);
-    // const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
     this.setState({
       currentMode: 'random',
       currentRandomIndex: 0,
       randomVidArr: idsArr,
-      // [`videoId${nextVidElement}`]: idsArr[Math.floor(Math.random() * idsArr.length)],
       videoId: idsArr[Math.floor(Math.random() * idsArr.length)],
-      // currentVidElement: nextVidElement,
     }, () => {
       const element = this.video.current;
       this.handleVideoPlay(element);
@@ -148,11 +144,9 @@ class Client extends Component {
     }
   }
 
-  // TODO: set this.randomTimeout = null when clearing timeOut
   playRandomImages = async (ids, randomDuration) => {
     const idsArr = ids.split(',');
     await this.assetCacher.preloadImages(idsArr);
-    // console.log('image preloading complete')
     this.setState({
       randomDuration,
       currentMode: 'randomImage',
@@ -174,7 +168,6 @@ class Client extends Component {
       playPromise.then(() => {
         this.checkedVideoAutoplay = true;
       }).catch((error) => {
-        // console.log(error);
         this.checkedVideoAutoplay = true;
         this.setState({
           currentMode: null,
@@ -190,12 +183,8 @@ class Client extends Component {
   }
 
   playSingleVideo = (id) => {
-    // const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
     this.setState({
       videoId: id,
-      // [`videoId${nextVidElement}`]: id,
-      // [`videoId2`]: id,
-      // currentVidElement: nextVidElement,
     }, () => {
       const element = this.video.current;
       this.handleVideoPlay(element);
@@ -214,15 +203,11 @@ class Client extends Component {
     const toRef = `video${otherId}`;
     const element = this[toRef].current;
     element.pause();
-    // console.log(element);
   }
 
-  // TODO: test all of this with very short videos
   onEnded = (elementNumber) => {
     if (this.state.currentMode === 'random'
-      // && (this.state.currentRandomIndex < this.state.randomVidArr.length - 1)
     ) {
-      // in array of random, go to next
       let nextIndex;
       if (this.state.randomVidArr.length > 1) {
         const indicesArr = Array.apply(null, { length: this.state.randomVidArr.length }).map(Number.call, Number);
@@ -232,9 +217,6 @@ class Client extends Component {
         nextIndex = this.state.currentRandomIndex;
       }
       const nextId = this.state.randomVidArr[nextIndex];
-      // const nextVidElement = this.state.currentVidElement === 1 ? 2 : 1;
-      // const nextIndex = this.state.currentRandomIndex + 1;
-      // const nextId = this.state.randomVidArr[nextIndex];
       this.setState({
         videoId: nextId,
         currentRandomIndex: nextIndex,
@@ -253,32 +235,16 @@ class Client extends Component {
 
   renderVideoElements = () => {
     const src = this.state.videoId ? `${config.filesPath}/videos/${this.state.videoId}.mp4` : null;
-    // const src1 = this.state.videoId1 ? `${config.filesPath}/${this.state.videoId1}.mp4` : null;
-    // const src2 = this.state.videoId2 ? `${config.filesPath}/${this.state.videoId2}.mp4` : null;
     return (
       <div className="videoContainer">
         {
-          // this.state.videoId1 && 
           <video ref={this.video}
             style={{ display: (this.state.currentMode === 'chase' || this.state.currentMode === 'random') ? 'block' : 'none' }}
-            // src={`http://67.205.170.55:8080/${this.state.videoId1}.mp4`}
-            // src={`http://localhost:3000/${this.state.videoId1}.mp4`}
             src={src}
             onEnded={() => { this.onEnded(1) }}
             muted
           />
         }
-        {/*{
-          // this.state.videoId2 &&
-          <video ref={this.video2}
-            style={{ display: (this.state.currentMode === 'chase' || this.state.currentMode === 'random') && this.state.currentVidElement === 2 ? 'block' : 'none' }}
-            // src={`http://67.205.170.55:8080/${this.state.videoId2}.mp4`}
-            src={src2}
-            onPlay={() => { this.onPlay(2) }}
-            onEnded={() => { this.onEnded(2) }}
-            muted
-          />
-        }*/}
       </div>
     )
   }
@@ -292,21 +258,11 @@ class Client extends Component {
         style={{ display }}
         className="image"
         src={src}
-      // src={this.assetCacher.images[this.state.imageId]}
       />
     )
   }
 
   render() {
-    // if (!this.state.clicked) {
-    //   return (
-    //   <div
-    //     className="clicker"
-    //     onClick={this.handleStartClick}
-    //   >
-    //     <h1>click to start</h1>
-    //   </div>)
-    // }
     return (
       <div id="client" className="client">
         {!this.state.imageOnlyMode && this.renderVideoElements()}

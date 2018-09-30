@@ -18,7 +18,6 @@ class Multi extends Component {
       const randomWidthBonus = Math.floor(Math.random() * 100);
       const randomTop = Math.floor(Math.random() * 400);
       const randomLeft = Math.floor(Math.random() * 700);
-      console.log('hua');
       window.open(window.location.origin, '_blank', `width=${200 + randomWidthBonus},height=${400 + randomHeightBonus},top=${randomTop},left=${randomLeft}`);
     }
   }
