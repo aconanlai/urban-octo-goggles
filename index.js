@@ -34,15 +34,44 @@ const wss = new WebSocket.Server({ server });
 const connections = {
 };
 
+const ipads = {}
+;
+
 let controller;
 
-const msgProcessor = msgTypes(connections);
+const msgProcessor = msgTypes(connections, ipads);
 const oscConverter = oscConverterFactory();
 
-wss.on('connection', (ws) => {
+function handleConnect(ws) {
   const id = uuid();
   ws.id = id;
   connections[id] = ws;
+}
+
+function handleDisconnect(ws) {
+  if (ws.ipad === true) {
+    handleIpadUnregister(ws);
+  }
+  const id = ws.id;
+  delete connections[id];
+}
+
+function handleIpadRegister(ws, deviceid) {
+  ws.ipad = true;
+  ws.deviceid = deviceid;
+  ipads[deviceid] = ws;
+  if (ws.id) {
+    delete connections[ws.id];
+  }
+}
+
+function handleIpadUnregister(ws) {
+  const deviceid = ws.deviceid;
+  delete ipads[deviceid];
+}
+
+wss.on('connection', (ws, req) => {
+  handleConnect(ws);
   sendClientsList();
   ws.on('message', function incoming(data) {
     const msg = JSON.parse(data);
@@ -61,16 +90,22 @@ wss.on('connection', (ws) => {
         break;
       case 'registerController':
         controller = ws;
-        delete connections[ws.id];
+        handleDisconnect(ws);
         sendClientsList();
         break;
+      case 'registerIpad':
+          logger.info(`registerIpad received: ${JSON.stringify(msg)}`);
+          handleIpadRegister(ws, msg.deviceid);
+          break;
       default:
         break;
     }
   });
 
   ws.on('close', function close() {
-    delete connections[ws.id];
+    // delete connections[ws.id];
+    handleDisconnect(ws.id);
+    // todo: handle disconnect
     sendClientsList();
   });
 });
@@ -90,7 +125,7 @@ app.use(express.static(__dirname + '/build', {
 app.get('*', (req, res) => res.sendFile(path.join(__dirname + '/build/index.html')));
 
 // start our server
-server.listen(process.env.PORT || 80, () => {
+server.listen(process.env.PORT || 8080, () => {
   logger.info('Server started');
 });
 

@@ -29,6 +29,42 @@ module.exports = () => {
           videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }).join(','),
         };
         break;
+      case '/send_sequence':
+          if (args.length < 2) {
+            logger.error('incorrect number of arguments for send_sequence');
+            break;
+          }
+          payload = {
+            msgType: 'sendVideo',
+            mode: 'sequence',
+            percentage: args[0].value,
+            videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }).join(','),
+          };
+          break;
+      case '/send_random_to_ipad':
+        if (args.length < 2) {
+          logger.error('incorrect number of arguments for send_random_to_ipad');
+          break;
+        }
+        payload = {
+          msgType: 'sendVideo',
+          mode: 'ipadRandom',
+          ip: args[0].value,
+          videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }).join(','),
+        };
+        break;
+      case '/send_sequence_to_ipad':
+          if (args.length < 2) {
+            logger.error('incorrect number of arguments for send_sequence_to_ipad');
+            break;
+          }
+          payload = {
+            msgType: 'sendVideo',
+            mode: 'ipadSequence',
+            ip: args[0].value,
+            videoIds: args.slice(1, args.length).map((arg) => { return arg.value; }).join(','),
+          };
+          break;
       case '/send_chase_image':
         if (args.length < 4) {
           logger.error('incorrect number of arguments for send_chase_image');
@@ -56,6 +92,45 @@ module.exports = () => {
           imageIds: args.slice(2, args.length).map((arg) => { return arg.value; }).join(','),
         };
         break;
+        case '/send_sequence_image':
+          if (args.length < 3) {
+            logger.error('incorrect number of arguments for send_sequence_image');
+            break;
+          }
+          payload = {
+            msgType: 'sendImage',
+            mode: 'sequence',
+            percentage: args[0].value,
+            imageDuration: args[1].value,
+            imageIds: args.slice(2, args.length).map((arg) => { return arg.value; }).join(','),
+          };
+          break;
+      case '/send_random_image_to_ipad':
+        if (args.length < 3) {
+          logger.error('incorrect number of arguments for send_random_image_to_ipad');
+          break;
+        }
+        payload = {
+          msgType: 'sendImage',
+          mode: 'ipadRandom',
+          ip: args[0].value,
+          imageDuration: args[1].value,
+          imageIds: args.slice(2, args.length).map((arg) => { return arg.value; }).join(','),
+        };
+        break;
+        case '/send_sequence_image_to_ipad':
+          if (args.length < 3) {
+            logger.error('incorrect number of arguments for send_sequence_image_to_ipad');
+            break;
+          }
+          payload = {
+            msgType: 'sendImage',
+            mode: 'ipadSequence',
+            ip: args[0].value,
+            imageDuration: args[1].value,
+            imageIds: args.slice(2, args.length).map((arg) => { return arg.value; }).join(','),
+          };
+          break;
       case '/send_kill':
         if (args.length !== 1) {
           logger.error('incorrect number of arguments for send_kill');
@@ -66,6 +141,7 @@ module.exports = () => {
           percentage: args[0].value,
         };
         break;
+      // segmented are now deprecated
       case '/send_segmented_random_image':
         payload = handleSegmentedImageRandom(args);
         break;

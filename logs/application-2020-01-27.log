@@ -1,0 +1,124 @@
+{"message":"Mon Jan 27 2020 15:07:04 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:09:08 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:09:49 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:10:00 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:11:11 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:11:16 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:11:27 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:14:49 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:15:30 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:15:44 GMT-0500 (Eastern Standard Time): unhandledRejection: err: TypeError: Cannot read property 'url' of undefined","level":"error"}
+{"message":"Mon Jan 27 2020 15:16:56 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:17:00 GMT-0500 (Eastern Standard Time): unhandledRejection: err: ReferenceError: ip is not defined","level":"error"}
+{"message":"Mon Jan 27 2020 15:18:01 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:18:01 GMT-0500 (Eastern Standard Time): unhandledRejection: err: ReferenceError: ip is not defined","level":"error"}
+{"message":"Mon Jan 27 2020 15:18:20 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:18:22 GMT-0500 (Eastern Standard Time): unhandledRejection: err: ReferenceError: ip is not defined","level":"error"}
+{"message":"Mon Jan 27 2020 15:18:51 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:18:54 GMT-0500 (Eastern Standard Time): unhandledRejection: err: ReferenceError: ip is not defined","level":"error"}
+{"message":"Mon Jan 27 2020 15:19:07 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:19:08 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:19:10 GMT-0500 (Eastern Standard Time): unhandledRejection: err: ReferenceError: ip is not defined","level":"error"}
+{"message":"Mon Jan 27 2020 15:21:12 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:21:14 GMT-0500 (Eastern Standard Time): unhandledRejection: err: ReferenceError: ip is not defined","level":"error"}
+{"message":"Mon Jan 27 2020 15:27:39 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:27:46 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:31:07 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:31:11 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:31:21 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:32:16 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:32:21 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:34:33 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:45:22 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:45:41 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:45:49 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:46:03 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:46:14 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:46:50 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:47:43 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:50:35 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:50:58 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:54:23 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:54:27 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:55:46 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:55:50 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:56:22 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:56:22 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:57:08 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:57:10 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:57:19 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:57:22 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:57:36 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:57:40 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:57:45 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:57:48 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 15:58:24 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 15:58:25 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:02:04 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:02:05 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:02:30 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:02:31 GMT-0500 (Eastern Standard Time): unhandledRejection: err: ReferenceError: msg is not defined","level":"error"}
+{"message":"Mon Jan 27 2020 16:02:39 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:02:40 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:02:56 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:03:13 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:04:25 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:04:28 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:05:14 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:05:16 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:05:34 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:05:37 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:06:04 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:06:06 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:06:11 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:06:16 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:06:21 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:06:24 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:07:32 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:07:33 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:08:25 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:08:28 GMT-0500 (Eastern Standard Time): unhandledRejection: err: SyntaxError: Unexpected token o in JSON at position 1","level":"error"}
+{"message":"Mon Jan 27 2020 16:08:52 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:10:06 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:10:11 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:10:19 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:11:00 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:11:07 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:11:11 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:11:20 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:11:48 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:11:54 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:12:02 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:12:29 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:12:34 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:12:37 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:12:45 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:12:45 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:13:05 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:13:05 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:13:24 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:13:28 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:13:36 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:13:41 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:16:39 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:16:43 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:19:17 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:19:19 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:20:50 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:20:52 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:20:55 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:21:34 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:21:35 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:41:12 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:41:14 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:49:46 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:49:47 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:54:38 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:54:45 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:57:40 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:57:44 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:58:23 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:58:30 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 16:58:45 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:58:48 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 16:58:49 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}

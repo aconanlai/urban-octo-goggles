@@ -4,6 +4,15 @@ import { AssetCacher } from './assetCacher'
 
 import './client.css';
 
+function getUrlParameter(name) {
+  console.log('getting url paramters')
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+  var results = regex.exec(window.location.search);
+  console.log('window location: ', window.location.search)
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+};
+
 class Client extends Component {
   constructor(props) {
     super(props);
@@ -31,11 +40,24 @@ class Client extends Component {
     this.onEnded = this.onEnded.bind(this);
     this.playNextRandomMedia = this.playNextRandomMedia.bind(this);
     this.handleVideoPlay = this.handleVideoPlay.bind(this);
+    this.playNextSequenceImage = this.playNextSequenceImage.bind(this);
+    this.playSequenceVideos = this.playSequenceVideos.bind(this);
+    this.playSequenceImages = this.playSequenceImages.bind(this);
   }
+  
 
   openWs = () => {
     this.ws = new WebSocket(config.socketEndpoint);
     this.ws.onopen = (event) => {
+      if (deviceid) {
+        const msg = JSON.stringify({
+          msgType: 'registerIpad',  
+          deviceid,
+        });
+        this.ws.send(msg);
+      } else {
+        console.log('no deviceid found');
+      };
       this.ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
         if (data.msgType === 'sendVideo' && this.state.imageOnlyMode !== true) {
@@ -74,6 +96,10 @@ class Client extends Component {
         this.playRandomVideos(msg.videoIds);
         this.clearRandomImageTimeout();
         break;
+      case 'sequence':
+        this.playSequenceVideos(msg.videoIds);
+        this.clearRandomImageTimeout();
+        break;
       default:
         break;
     }
@@ -100,6 +126,9 @@ class Client extends Component {
       case 'random':
         this.playRandomImages(msg.imageIds, imageDuration);
         break;
+      case 'sequence':
+        this.playSequenceImages(msg.imageIds, imageDuration);
+        break;
       default:
         break;
     }
@@ -119,9 +148,25 @@ class Client extends Component {
     });
   }
 
+  playSequenceVideos = async (ids) => {
+    const idsArr = ids.split(',');
+    await this.assetCacher.preloadVideos(idsArr);
+    this.setState({
+      currentMode: 'sequence',
+      currentSequenceIndex: 0,
+      sequenceVidArr: idsArr,
+      videoId: idsArr[0],
+    }, () => {
+      const element = this.video.current;
+      this.handleVideoPlay(element);
+    });
+  }
+
   clearRandomImageTimeout = () => {
     clearTimeout(this.randomTimeout);
     this.randomTimeout = null;
+    clearTimeout(this.sequenceTimeout);
+    this.sequenceTimeout = null;
   }
 
   // TODO: this can be adapted for videos if we ever move off the onEnd solution...
@@ -144,6 +189,24 @@ class Client extends Component {
     }
   }
 
+  playNextSequenceImage = () => {
+    if (this.state.currentMode === 'sequenceImage') {
+      const { sequenceImageArr, currentSequenceIndex } = this.state;
+      const arrLength = sequenceImageArr.length;
+      let nextIndex = currentSequenceIndex === arrLength - 1 ? 0 : currentSequenceIndex + 1;
+      const nextId = sequenceImageArr[nextIndex];
+
+      this.setState({
+        imageId: nextId,
+        currentRandomIndex: nextIndex,
+      }, () => {
+        this.sequenceTimeout = setTimeout(this.playNextSequenceImage, this.state.sequenceDuration);
+      })
+    } else if (this.state.currentMode === 'randomVideo') {
+      // TODO
+    }
+  }
+
   playRandomImages = async (ids, randomDuration) => {
     const idsArr = ids.split(',');
     await this.assetCacher.preloadImages(idsArr);
@@ -155,6 +218,21 @@ class Client extends Component {
     }, () => {
       if (!this.randomTimeout) {
         this.playNextRandomMedia();
+      }
+    });
+  }
+
+  playSequenceImages = async (ids, sequenceDuration) => {
+    const idsArr = ids.split(',');
+    await this.assetCacher.preloadImages(idsArr);
+    this.setState({
+      sequenceDuration,
+      currentMode: 'sequenceImage',
+      currentSequenceIndex: 0,
+      sequenceImageArr: idsArr,
+    }, () => {
+      if (!this.sequenceTimeout) {
+        this.playNextSequenceImage();
       }
     });
   }
@@ -224,12 +302,24 @@ class Client extends Component {
         const element = this.video.current;
         this.handleVideoPlay(element);
       });
-      return
+      return;
     } else if (this.state.currentMode === 'chase') {
       this.clearRandomImageTimeout();
       this.setState({
         currentMode: null,
       })
+    } else if (this.state.currentMode === 'sequence') {
+      const { sequenceVidArr, currentSequenceIndex } = this.state;
+      const arrLength = sequenceVidArr.length;
+      let nextIndex = currentSequenceIndex === arrLength - 1 ? 0 : currentSequenceIndex + 1;
+      const nextId = sequenceVidArr[nextIndex];
+      this.setState({
+        videoId: nextId,
+        currentSequenceIndex: nextIndex,
+      }, () => {
+        const element = this.video.current;
+        this.handleVideoPlay(element);
+      });
     }
   }
 

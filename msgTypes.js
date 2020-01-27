@@ -4,7 +4,8 @@ const WebSocket = require('ws');
 
 const logger = require('./logger');
 
-module.exports = (connections) => {
+module.exports = (connections, ipads) => {
+
   const types = {
     /**
     * send to all users
@@ -66,6 +67,61 @@ module.exports = (connections) => {
     },
 
     /**
+    * send to random videos to ipad
+    * @param {Array<string>} msg.videoIds
+    * @param {number} msg.ipad
+    */
+    sendToIpadRandom: (msg) => {
+      const { ipad, videoIds } = msg;
+      if (!ippad || !videoIds) {
+        logger.error('incorrect params when sending random video to ipad');
+        return;
+      }
+      const client = ipads[ipad];
+      logger.info(`sending random videos to ipad ${ipad} with videos: ${msg.videoIds}`);
+      sendToClients([client], {
+        ...msg,
+        mode: 'random',
+      }), true;
+    },
+
+    /**
+    * send to video to random user(s) in sequence
+    * @param {Array<string>} msg.videoIds
+    * @param {number} msg.percentage
+    */
+    sendToSequence: (msg) => {
+      const { percentage, videoIds } = msg;
+      if (!percentage || !videoIds) {
+        logger.error('incorrect params when sending sequence video');
+        return;
+      }
+      const realPercentage = Number(percentage);
+      const clients = utils.getRandomPercentage(Object.values(connections), realPercentage);
+      logger.info(`sending sequence mode to ${percentage}% of users (${clients.length} users) with videos: ${msg.videoIds}`);
+      sendToClients(clients, msg);
+    },
+  
+    /**
+    * send to video to ipad in sequence
+    * @param {Array<string>} msg.videoIds
+    * @param {number} msg.ipad
+    */
+    sendToIpadSequence: (msg) => {
+      const { ipad, videoIds } = msg;
+      if (!ipad || !videoIds) {
+        logger.error('incorrect params when sending sequence video to ipad');
+        return;
+      }
+      const client = ipads[ipad];
+      logger.info(`sending sequence video mode to ipad ${ipad} with videos: ${msg.videoIds}`);
+      sendToClients([client], {
+        ...msg,
+        mode: 'sequence',
+      }, true);
+    },
+
+    /**
     * send image to random user(s)
     * @param {string} msg.imageIds - actually single videoId
     * @param {number} msg.percentage
@@ -97,13 +153,69 @@ module.exports = (connections) => {
     sendImageToRandom: (msg) => {
       const { percentage, imageIds, imageDuration } = msg;
       if (!percentage || !imageIds || !imageDuration) {
-        logger.error('incorrect params when sending random video');
+        logger.error('incorrect params when sending random image');
         return;
       }
       const realPercentage = Number(msg.percentage);
       const clients = utils.getRandomPercentage(Object.values(connections), realPercentage);
       logger.info(`sending random mode to ${percentage}% of users (${clients.length} users) with images: ${msg.imageIds}`);
       sendToClients(clients, msg);
+    },
+
+    /**
+    * send random images to ipad
+    * @param {Array<string>} msg.imageIds
+    * @param {number} msg.ipad
+    */
+    sendImageToIpadRandom: (msg) => {
+      const { ipad, imageIds, imageDuration } = msg;
+      if (!ipad || !imageIds || !imageDuration) {
+        logger.error('incorrect params when sending random image to ipad');
+        return;
+      }
+      const client = ipads[ipad];
+      logger.info(`sending random mode to ipad ${ipad} with images: ${msg.imageIds}`);
+      sendToClients([client], {
+        ...msg,
+        mode: 'random',
+      }, true);
+    },
+
+    /**
+    * send images to random user(s) in sequence
+    * @param {Array<string>} msg.imageIds
+    * @param {number} msg.percentage
+    */
+    sendImageToSequence: (msg) => {
+      const { percentage, imageIds, imageDuration } = msg;
+      if (!percentage || !imageIds || !imageDuration) {
+        logger.error('incorrect params when sending sequence image');
+        return;
+      }
+      const realPercentage = Number(msg.percentage);
+      const clients = utils.getRandomPercentage(Object.values(connections), realPercentage);
+      logger.info(`sending sequence mode to ${percentage}% of users (${clients.length} users) with images: ${msg.imageIds}`);
+      sendToClients(clients, msg);
+    },
+
+    /**
+    * send images to ipad in sequence
+    * @param {Array<string>} msg.imageIds
+    * @param {number} msg.ipad
+    */
+    sendImageToIpadSequence: (msg) => {
+      const { ipad, imageIds, imageDuration } = msg;
+      if (!ipad || !imageIds || !imageDuration) {
+        logger.error('incorrect params when sending sequence image to ipad');
+        return;
+      }
+      const client = ipads[ipad];
+      logger.info(`sending sequence mode to ipad ${ipad} with images: ${msg.imageIds}`);
+      sendToClients([client], {
+        ...msg,
+        mode: 'sequence'
+      }, true);
+
     },
 
     /**
@@ -222,6 +334,12 @@ module.exports = (connections) => {
       switch (msg.mode) {
         case 'random':
           return types.sendToRandom(msg);
+        case 'sequence':
+          return types.sendToSequence(msg);
+        case 'ipadRandom':
+          return types.sendToIpadRandom(msg);
+        case 'ipadSequence':
+          return types.sendToIpadSequence(msg);
         case 'chase':
           return types.sendChase(msg);
         case 'randomSegmented':
@@ -242,6 +360,12 @@ module.exports = (connections) => {
       switch (msg.mode) {
         case 'random':
           return types.sendImageToRandom(msg);
+        case 'sequence':
+          return types.sendImageToSequence(msg);
+        case 'ipadRandom':
+          return types.sendImageToIpadRandom(msg);
+        case 'ipadSequence':
+          return types.sendImageToIpadSequence(msg);
         case 'chase':
           return types.sendImageChase(msg);
         case 'randomSegmented':
@@ -268,8 +392,11 @@ module.exports = (connections) => {
   * @param {Array<connection>} clients
   * @param {Message} msg
   */
-function sendToClients(clients, msg) {
+function sendToClients(clients, msg, isIpad) {
   clients.forEach(function each(client, i) {
+    if (isIpad === true && !client.ipad) {
+      return;
+    }
     if (client && client.readyState === WebSocket.OPEN) {
       client.send(JSON.stringify(msg));
     }
