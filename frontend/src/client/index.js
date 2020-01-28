@@ -5,11 +5,9 @@ import { AssetCacher } from './assetCacher'
 import './client.css';
 
 function getUrlParameter(name) {
-  console.log('getting url paramters')
   name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
   var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
   var results = regex.exec(window.location.search);
-  console.log('window location: ', window.location.search)
   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 };
 
@@ -49,15 +47,14 @@ class Client extends Component {
   openWs = () => {
     this.ws = new WebSocket(config.socketEndpoint);
     this.ws.onopen = (event) => {
+      const deviceid = getUrlParameter('deviceid')
       if (deviceid) {
         const msg = JSON.stringify({
           msgType: 'registerIpad',  
           deviceid,
         });
         this.ws.send(msg);
-      } else {
-        console.log('no deviceid found');
-      };
+      }
       this.ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
         if (data.msgType === 'sendVideo' && this.state.imageOnlyMode !== true) {
@@ -195,10 +192,9 @@ class Client extends Component {
       const arrLength = sequenceImageArr.length;
       let nextIndex = currentSequenceIndex === arrLength - 1 ? 0 : currentSequenceIndex + 1;
       const nextId = sequenceImageArr[nextIndex];
-
       this.setState({
         imageId: nextId,
-        currentRandomIndex: nextIndex,
+        currentSequenceIndex: nextIndex,
       }, () => {
         this.sequenceTimeout = setTimeout(this.playNextSequenceImage, this.state.sequenceDuration);
       })
@@ -329,7 +325,7 @@ class Client extends Component {
       <div className="videoContainer">
         {
           <video ref={this.video}
-            style={{ display: (this.state.currentMode === 'chase' || this.state.currentMode === 'random') ? 'block' : 'none' }}
+            style={{ display: (this.state.currentMode === 'chase' || this.state.currentMode === 'random'  || this.state.currentMode === 'sequence') ? 'block' : 'none' }}
             src={src}
             onEnded={() => { this.onEnded(1) }}
             muted
@@ -340,7 +336,7 @@ class Client extends Component {
   }
 
   renderImage = () => {
-    const display = (this.state.currentMode === 'chaseImage' || this.state.currentMode === 'randomImage') && this.state.imageId
+    const display = (this.state.currentMode === 'chaseImage' || this.state.currentMode === 'randomImage' || this.state.currentMode === 'sequenceImage') && this.state.imageId
       ? 'block' : 'none';
     const src = this.state.imageId ? `${config.filesPath}/images/${this.state.imageId}.jpg` : null;
     return (

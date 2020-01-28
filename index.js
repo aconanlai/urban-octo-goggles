@@ -125,7 +125,7 @@ app.use(express.static(__dirname + '/build', {
 app.get('*', (req, res) => res.sendFile(path.join(__dirname + '/build/index.html')));
 
 // start our server
-server.listen(process.env.PORT || 8080, () => {
+server.listen(process.env.PORT || 80, () => {
   logger.info('Server started');
 });
 

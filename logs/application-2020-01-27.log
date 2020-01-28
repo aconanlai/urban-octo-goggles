@@ -122,3 +122,652 @@
 {"message":"Mon Jan 27 2020 16:58:45 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
 {"message":"Mon Jan 27 2020 16:58:48 GMT-0500 (Eastern Standard Time): Server started","level":"info"}
 {"message":"Mon Jan 27 2020 16:58:49 GMT-0500 (Eastern Standard Time): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:02:17 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:02 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:08 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:08 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"witness\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:08 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: witness","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:15 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:15 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"wilderness\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:15 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: wilderness","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:16 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:21 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:21 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:21 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:22 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:22 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:22 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:23 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:30 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:31 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:35 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:39 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:39 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:39 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:50 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:50 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternat,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:50 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternat,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:53 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:53 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:03:53 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:11 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:11 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:11 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:13 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:13 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:13 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:13 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:13 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:13 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:14 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:14 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:14 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:14 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:14 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:14 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:24 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:24 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:24 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:41 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:45 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:04:56 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:05:01 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:05:01 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:05:01 GMT-0500 (EST): sending random mode to 100% of users (0 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:05:57 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:05:59 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:05:59 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:05:59 GMT-0500 (EST): sending random mode to 100% of users (1 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:02 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:02 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:02 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:13 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:13 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:13 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:15 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:15 GMT-0500 (EST): sendKill received via udp: {\"msgType\":\"sendKill\",\"percentage\":100}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:15 GMT-0500 (EST): sending kill msg to 100% of users (3 users)","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:22 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:22 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:22 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:24 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:24 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:24 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:28 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:28 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:28 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:31 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:31 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:31 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:33 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:33 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:33 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:33 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:33 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:06:33 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:09:29 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:09:35 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:09:47 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:19 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:19 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:19 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:21 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:21 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:21 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:22 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:23 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:23 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:23 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:25 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:25 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:25 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:25 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:25 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:25 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:26 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:26 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:26 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:27 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:27 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:27 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:28 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:28 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:28 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:29 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:29 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:29 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:30 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:30 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:30 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:35 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:35 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:35 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:37 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:37 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:37 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:45 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:45 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:10:45 GMT-0500 (EST): sending random mode to 100% of users (5 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:04 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:04 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:04 GMT-0500 (EST): sending sequence mode to 100% of users (7 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:15 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:15 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:15 GMT-0500 (EST): sending sequence mode to 100% of users (7 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:16 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:16 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:16 GMT-0500 (EST): sending sequence mode to 100% of users (7 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:19 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:19 GMT-0500 (EST): sendKill received via udp: {\"msgType\":\"sendKill\",\"percentage\":100}","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:19 GMT-0500 (EST): sending kill msg to 100% of users (7 users)","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:51 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:11:56 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:07 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:09 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:09 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"chase\",\"percentage\":100,\"imageDuration\":100,\"interval\":1000,\"imageIds\":\"infinitysure\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:09 GMT-0500 (EST): sending chase mode to 100% of users (0 users) with image: infinitysure","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:44 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:44 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"chase\",\"percentage\":100,\"videoIds\":\"walk2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:44 GMT-0500 (EST): sending chase mode to 100% of users (5 users) with video: walk2","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:48 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:12:57 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:05 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:05 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:08 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:26 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:26 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:26 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:30 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:30 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back,clap\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:30 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back,clap","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:33 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:33 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:33 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: art1,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:41 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:13:50 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:01 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:06 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:06 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:06 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:11 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:11 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:11 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:14 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:14 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:14:14 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:15:17 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:15:17 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:15:17 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:15:54 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:15:54 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:15:54 GMT-0500 (EST): sending random mode to 100% of users (6 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:16:00 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:16:00 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:16:00 GMT-0500 (EST): sending sequence mode to 100% of users (6 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:17:29 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:17:38 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:17:47 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:17:50 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:02 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:02 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:02 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:17 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:18 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:36 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:44 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:18:44 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:19:03 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:19:13 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:19:13 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:19:13 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:20:33 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:20:40 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:20:49 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:20:49 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:21:09 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:21:17 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:21:18 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:21:21 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:21:35 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:21:35 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:21:35 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:23:35 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:23:43 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:23:57 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:04 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:05 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:09 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:19 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:19 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"art1,alternate,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:19 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with images: art1,alternate,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:27 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:27 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"alternate,art1,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:27 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with images: alternate,art1,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:29 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:29 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"alternate,art1,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:29 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with images: alternate,art1,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:43 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:51 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:24:51 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:04 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:08 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:08 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":500,\"imageIds\":\"alternate,art1,back\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:08 GMT-0500 (EST): sending sequence mode to 100% of users (2 users) with images: alternate,art1,back","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:43 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:43 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"logovid\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:43 GMT-0500 (EST): sending random mode to 100% of users (2 users) with videos: logovid","level":"info"}
+{"message":"Mon Jan 27 2020 19:25:53 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:26:18 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:26:54 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:26:59 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:26:59 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:26:59 GMT-0500 (EST): sending sequence mode to 100% of users (2 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 19:27:04 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:27:04 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:27:04 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:27:28 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:27:28 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:27:28 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 19:37:47 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:38:13 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:38:54 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:24 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:24 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:24 GMT-0500 (EST): sending random mode to 100% of users (1 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:27 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:27 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:27 GMT-0500 (EST): sending random mode to 100% of users (1 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:28 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:28 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:28 GMT-0500 (EST): sending random mode to 100% of users (1 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:50 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:50 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:50 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:54 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:54 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:54 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:59 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:59 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:39:59 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:03 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:03 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:03 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:05 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:05 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:05 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:20 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:20 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:20 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:21 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:21 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:21 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:52 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:52 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:52 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:54 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:54 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:54 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: blink","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:56 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:56 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:40:56 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:01 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:01 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:01 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:03 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:03 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:03 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:04 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:04 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:04 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:17 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:17 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:17 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: blink,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:24 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:24 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:24 GMT-0500 (EST): sending random mode to 100% of users (6 users) with videos: blink,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:36 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:36 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:36 GMT-0500 (EST): sending random mode to 100% of users (6 users) with videos: lightupward,lightdownward","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:45 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:45 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:45 GMT-0500 (EST): sending random mode to 100% of users (7 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:58 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:58 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:41:58 GMT-0500 (EST): sending random mode to 100% of users (7 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:13 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:13 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:13 GMT-0500 (EST): sending sequence mode to 100% of users (8 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:28 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:28 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:28 GMT-0500 (EST): sending sequence mode to 100% of users (8 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:31 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:31 GMT-0500 (EST): sendKill received via udp: {\"msgType\":\"sendKill\",\"percentage\":100}","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:31 GMT-0500 (EST): sending kill msg to 100% of users (8 users)","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:34 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:34 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:34 GMT-0500 (EST): sending sequence mode to 100% of users (8 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:37 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:37 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:42:37 GMT-0500 (EST): sending sequence mode to 100% of users (8 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:44:27 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:44:27 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,black\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:44:27 GMT-0500 (EST): sending random mode to 100% of users (9 users) with videos: lightupward,lightdownward,black","level":"info"}
+{"message":"Mon Jan 27 2020 19:44:44 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:44:44 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:44:44 GMT-0500 (EST): sending random mode to 100% of users (9 users) with videos: lightupward,lightdownward","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:05 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:16 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:16 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,headbackÂ´\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:16 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: lightupward,lightdownward,headbackÂ´","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:16 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:16 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,headbackÂ´\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:16 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: lightupward,lightdownward,headbackÂ´","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:19 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:19 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,headback\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:19 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: lightupward,lightdownward,headback","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:28 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:28 GMT-0500 (EST): sendKill received via udp: {\"msgType\":\"sendKill\",\"percentage\":100}","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:28 GMT-0500 (EST): sending kill msg to 100% of users (4 users)","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:39 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:40 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:45:58 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:17 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:17 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:17 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:51 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:51 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,headback\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:51 GMT-0500 (EST): sending random mode to 100% of users (5 users) with videos: lightupward,lightdownward,headback","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:54 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:54 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:54 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:57 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:57 GMT-0500 (EST): sendKill received via udp: {\"msgType\":\"sendKill\",\"percentage\":100}","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:57 GMT-0500 (EST): sending kill msg to 100% of users (5 users)","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:58 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:58 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:46:58 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:01 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:01 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:01 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:42 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:42 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:43 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:52 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:47:56 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:48:05 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:48:08 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:48:22 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:48:22 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:48:22 GMT-0500 (EST): sending sequence mode to 100% of users (5 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 19:48:53 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"a\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:49:26 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:49:26 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"a\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:49:26 GMT-0500 (EST): sending random mode to ipad a with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:49:49 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:49:49 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"a\",\"imageDuration\":200,\"imageIds\":\"alternate,art1,art2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:49:49 GMT-0500 (EST): sending random mode to ipad a with images: alternate,art1,art2","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:18 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:18 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"a\",\"imageDuration\":200,\"imageIds\":\"alternate,art1,art2,art3\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:18 GMT-0500 (EST): sending random mode to ipad a with images: alternate,art1,art2,art3","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:31 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:31 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"uncanny\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:31 GMT-0500 (EST): sending random mode to 100% of users (6 users) with images: uncanny","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:42 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:42 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"uncanny,witness\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:50:42 GMT-0500 (EST): sending random mode to 100% of users (6 users) with images: uncanny,witness","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:07 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:07 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"a\",\"imageDuration\":200,\"imageIds\":\"alternate,art1,art2,art3\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:07 GMT-0500 (EST): sending random mode to ipad a with images: alternate,art1,art2,art3","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:17 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:17 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"a\",\"imageDuration\":200,\"imageIds\":\"alternate,art1,art2,art3\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:17 GMT-0500 (EST): sending random mode to ipad a with images: alternate,art1,art2,art3","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:24 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:24 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"a\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:51:24 GMT-0500 (EST): sending random mode to ipad a with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:52:43 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:52:46 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:52:46 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:52:46 GMT-0500 (EST): sending random mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:52:57 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:52:57 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:52:57 GMT-0500 (EST): sending random mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:27 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:27 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:27 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:30 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:30 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:30 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:36 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:36 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:36 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:38 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:40 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:40 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:40 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:53 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:53 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:53:53 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:54:37 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:55:41 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:55:43 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:55:52 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:55:54 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:55:54 GMT-0500 (EST): incorrect number of arguments for send_random_image_to_ipad","level":"error"}
+{"message":"Mon Jan 27 2020 19:55:56 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:55:56 GMT-0500 (EST): incorrect number of arguments for send_random_image_to_ipad","level":"error"}
+{"message":"Mon Jan 27 2020 19:56:01 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:56:04 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:56:04 GMT-0500 (EST): incorrect number of arguments for send_random_image_to_ipad","level":"error"}
+{"message":"Mon Jan 27 2020 19:56:08 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:56:08 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"imageDuration\":\"art1\",\"imageIds\":\"alternate\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:56:08 GMT-0500 (EST): sending random mode to ipad b with images: alternate","level":"info"}
+{"message":"Mon Jan 27 2020 19:56:45 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:56:45 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"imageDuration\":\"alternate\",\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:56:45 GMT-0500 (EST): sending random mode to ipad b with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:18 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:22 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:24 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:38 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:40 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"m\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:42 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:43 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:58 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:58 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"uncanny,witness\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:57:58 GMT-0500 (EST): sending random mode to 100% of users (2 users) with images: uncanny,witness","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:08 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:08 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:08 GMT-0500 (EST): sending random mode to 100% of users (2 users) with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:13 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:13 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:13 GMT-0500 (EST): sending random mode to 100% of users (2 users) with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:16 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:16 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:16 GMT-0500 (EST): sending random mode to 100% of users (2 users) with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:17 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:17 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:17 GMT-0500 (EST): sending random mode to 100% of users (2 users) with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:25 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:25 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:25 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:58:46 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:59:00 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 19:59:00 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":\"alternate\",\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:59:00 GMT-0500 (EST): sending sequence mode to ipad b with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 19:59:39 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 19:59:40 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 19:59:41 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:01:25 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:01:25 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:01:39 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"m\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:01:53 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:02:07 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:02:07 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"imageDuration\":\"alternate\",\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:02:07 GMT-0500 (EST): sending random mode to ipad b with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:02:46 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:02:46 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"imageDuration\":100,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:02:46 GMT-0500 (EST): sending random mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:05 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:05 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:05 GMT-0500 (EST): sending random mode to ipad b with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:15 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:15 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"m\",\"imageDuration\":\"alternate\",\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:15 GMT-0500 (EST): sending random mode to ipad m with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:15 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:15 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"m\",\"imageDuration\":\"alternate\",\"imageIds\":\"art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:15 GMT-0500 (EST): sending random mode to ipad m with images: art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:41 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:41 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:03:41 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:04:51 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:04:51 GMT-0500 (EST): unknown address in osc: /send_random_sequence_to_ipad","level":"error"}
+{"message":"Mon Jan 27 2020 20:04:56 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:04:56 GMT-0500 (EST): unknown address in osc: /send_random_sequence_to_ipad","level":"error"}
+{"message":"Mon Jan 27 2020 20:04:58 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:04:58 GMT-0500 (EST): unknown address in osc: /send_random_sequence_to_ipad","level":"error"}
+{"message":"Mon Jan 27 2020 20:05:06 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:06 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":200,\"imageIds\":\"alternate,art1,art2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:06 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1,art2","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:16 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:16 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":300,\"imageIds\":\"alternate,art1,art2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:16 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1,art2","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:33 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:33 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"imageDuration\":300,\"imageIds\":\"alternate,art1,black\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:33 GMT-0500 (EST): sending sequence mode to ipad b with images: alternate,art1,black","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:58 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:58 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"ipadRandom\",\"ipad\":\"m\",\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:05:58 GMT-0500 (EST): sending random mode to ipad m with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:35 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:35 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:35 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: alternate,art1","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:41 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:41 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1,art2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:41 GMT-0500 (EST): sending random mode to 100% of users (4 users) with images: alternate,art1,art2","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:55 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:55 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"sequence\",\"percentage\":100,\"imageDuration\":200,\"imageIds\":\"alternate,art1,black\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:06:55 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with images: alternate,art1,black","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:10 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:10 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:10 GMT-0500 (EST): sending random mode to 100% of users (4 users) with videos: blink,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:14 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:14 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:14 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:26 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:26 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:26 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:30 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:30 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:30 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:45 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:45 GMT-0500 (EST): unknown address in osc: /send_sequence_video","level":"error"}
+{"message":"Mon Jan 27 2020 20:07:51 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:51 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:51 GMT-0500 (EST): sending random mode to 100% of users (4 users) with videos: blink,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:57 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:57 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"blink,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:07:57 GMT-0500 (EST): sending random mode to 100% of users (4 users) with videos: blink,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:27 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:27 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:27 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:31 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:31 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:31 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:31 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:31 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"headback,blink,headback2\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:31 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: headback,blink,headback2","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:41 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:41 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupwards\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:41 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: lightupwards","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:44 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:44 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:44 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: lightupward","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:46 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:46 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:46 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: lightupward","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:46 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:46 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:46 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: lightupward","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:52 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:52 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:08:52 GMT-0500 (EST): sending sequence mode to 100% of users (4 users) with videos: lightupward,lightdownward","level":"info"}
+{"message":"Mon Jan 27 2020 20:09:01 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:01 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:04 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:08 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:08 GMT-0500 (EST): unknown address in osc: /send_sequence_video","level":"error"}
+{"message":"Mon Jan 27 2020 20:11:15 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:16 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:19 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:22 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:23 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"m\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:33 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:33 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:33 GMT-0500 (EST): sending sequence video mode to ipad b with videos: lightupward,lightdownward","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:41 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:41 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:41 GMT-0500 (EST): sending random videos to ipad b with videos: lightupward,lightdownward","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:59 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:59 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:11:59 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:02 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:02 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:02 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:08 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:08 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:08 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:10 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:10 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,headback\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:10 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: lightupward,lightdownward,headback","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:22 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:22 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"sequence\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:22 GMT-0500 (EST): sending sequence mode to 100% of users (3 users) with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:27 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:27 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"random\",\"percentage\":100,\"videoIds\":\"lightupward,lightdownward,headback\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:27 GMT-0500 (EST): sending random mode to 100% of users (3 users) with videos: lightupward,lightdownward,headback","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:46 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:46 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:46 GMT-0500 (EST): sending random videos to ipad b with videos: lightupward,lightdownward","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:54 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:54 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward,blink\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:12:54 GMT-0500 (EST): sending random videos to ipad b with videos: lightupward,lightdownward,blink","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:06 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:06 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadRandom\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:06 GMT-0500 (EST): sending random videos to ipad b with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:17 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:17 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:17 GMT-0500 (EST): sending sequence video mode to ipad b with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:26 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:26 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:26 GMT-0500 (EST): sending sequence video mode to ipad b with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:26 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:26 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadSequence\",\"ipad\":\"b\",\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:26 GMT-0500 (EST): sending sequence video mode to ipad b with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:29 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:29 GMT-0500 (EST): sendVideo received via udp: {\"msgType\":\"sendVideo\",\"mode\":\"ipadSequence\",\"ipad\":\"m\",\"videoIds\":\"lightupward,lightdownward,resting\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:13:29 GMT-0500 (EST): sending sequence video mode to ipad m with videos: lightupward,lightdownward,resting","level":"info"}
+{"message":"Mon Jan 27 2020 20:14:43 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:14:44 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:14:46 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"m\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:15:08 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:15:13 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:15:13 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:15:15 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:16:09 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:16:21 GMT-0500 (EST): Server started","level":"info"}
+{"message":"Mon Jan 27 2020 20:16:24 GMT-0500 (EST): registerIpad received: {\"msgType\":\"registerIpad\",\"deviceid\":\"b\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:15 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:15 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"a10,a11,a12,a13,a0,a01,a02,a03,a04,a05,a06,a07,a08,a09\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:15 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: a10,a11,a12,a13,a0,a01,a02,a03,a04,a05,a06,a07,a08,a09","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:17 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:17 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"a10,a11,a12,a13,a0,a01,a02,a03,a04,a05,a06,a07,a08,a09\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:17 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: a10,a11,a12,a13,a0,a01,a02,a03,a04,a05,a06,a07,a08,a09","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:18 GMT-0500 (EST): [object Object]","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:18 GMT-0500 (EST): sendImage received via udp: {\"msgType\":\"sendImage\",\"mode\":\"random\",\"percentage\":100,\"imageDuration\":100,\"imageIds\":\"a10,a11,a12,a13,a0,a01,a02,a03,a04,a05,a06,a07,a08,a09\"}","level":"info"}
+{"message":"Mon Jan 27 2020 20:17:18 GMT-0500 (EST): sending random mode to 100% of users (3 users) with images: a10,a11,a12,a13,a0,a01,a02,a03,a04,a05,a06,a07,a08,a09","level":"info"}

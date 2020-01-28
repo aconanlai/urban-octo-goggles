@@ -73,7 +73,7 @@ module.exports = (connections, ipads) => {
     */
     sendToIpadRandom: (msg) => {
       const { ipad, videoIds } = msg;
-      if (!ippad || !videoIds) {
+      if (!ipad || !videoIds) {
         logger.error('incorrect params when sending random video to ipad');
         return;
       }
