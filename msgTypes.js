@@ -394,6 +394,9 @@ module.exports = (connections, ipads) => {
   */
 function sendToClients(clients, msg, isIpad) {
   clients.forEach(function each(client, i) {
+    if (!client) {
+      return;
+    }
     if (isIpad === true && !client.ipad) {
       return;
     }
