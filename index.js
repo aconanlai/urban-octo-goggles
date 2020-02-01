@@ -163,12 +163,12 @@ udpPort.on('message', (oscMsg) => {
 // Open the socket.
 udpPort.open();
 
-process
-  .on('unhandledRejection', (reason, p) => {
-    logger.error(`unhandledRejection: reason: ${reason} - p: ${p}`);
-    process.exit(1);
-  })
-  .on('uncaughtException', err => {
-    logger.error(`unhandledRejection: err: ${err}`);
-    process.exit(1);
-  });
+// process
+//   .on('unhandledRejection', (reason, p) => {
+//     logger.error(`unhandledRejection: reason: ${reason} - p: ${p}`);
+//     process.exit(1);
+//   })
+//   .on('uncaughtException', err => {
+//     logger.error(`unhandledRejection: err: ${err}`);
+//     process.exit(1);
+//   });
