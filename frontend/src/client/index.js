@@ -121,9 +121,11 @@ class Client extends Component {
         })
         break;
       case 'random':
+        this.clearRandomImageTimeout();
         this.playRandomImages(msg.imageIds, imageDuration);
         break;
       case 'sequence':
+        this.clearRandomImageTimeout();
         this.playSequenceImages(msg.imageIds, imageDuration);
         break;
       default:
